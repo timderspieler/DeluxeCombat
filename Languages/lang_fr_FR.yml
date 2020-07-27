@@ -1,0 +1,304 @@
+##############################################################################################################
+#                                                                                                            #
+# ______     _                _____                 _           _                                            #
+# |  _  \   | |              /  __ \               | |         | |                                           #
+# | | | |___| |_   ___  _____| /  \/ ___  _ __ ___ | |__   __ _| |_                                          #
+# | | | / _ \ | | | \ \/ / _ \ |    / _ \| '_ ` _ \| '_ \ / _` | __|                                         #
+# | |/ /  __/ | |_| |>  <  __/ \__/\ (_) | | | | | | |_) | (_| | |_                                          #
+# |___/ \___|_|\__,_/_/\_\___|\____/\___/|_| |_| |_|_.__/ \__,_|\__|                                         #
+#------------------------------------------------------------------------------------------------------------#
+#                                                                                                            #
+# Merci d'avoir acheté DeluxeCombat - Une ressource de combat ultime et puissante pour chaque serveur        #
+#                                                                                                            #             
+# C'est l'un des fichiers de configuration du plugin DeluxeCombat.                                           #
+# Ici, vous pouvez configurer les messages.                                                                  #
+# Si vous souhaitez modifier tous les paramètres, passez au fichier config.yml                               #
+#                                                                                                            #
+# Le plugin supporte les versions suivantes du serveur :                                                     #
+# 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x, 1.15                                                 #
+#                                                                                                            #
+# Des problèmes ? Ecrivez-moi un message privé sur spigot ! Spigot : www.spigotmc.org/members/199727/        #
+# Pour obtenir une assistance rapide, veuillez également envisager de rejoindre mon serveur de discordes :   #
+# discordapp.com/invite/MGTSYjS                                                                              #
+#                                                                                                            #
+# ~ timderspieler                                                                                            #
+# Traduction en français par KiLlBiNvLoG#6920                                                                #
+#                                                                                                            #
+##############################################################################################################
+
+##############################################################################################################
+#                                                                                                            #
+# Pour désactiver un certain message, remplacez la valeur par "none" !                                       #
+#                                                                                                            #
+##############################################################################################################
+
+##############################################################################################################
+# Combatlogger                                                                                               #
+##############################################################################################################
+# Tous les messages concernant la lutte contre l'exploitation forestière                                     #
+##############################################################################################################
+
+combat-logger:
+ potion-disabled-during-combat: "&cCette potion est désactivée pendant le combat !"
+ damage-to-enemy: '&eVous êtes maintenant en &ccombat &aavec &6%victim% &ene vous déconnectez pas !'
+ damage-from-enemy: '&6%damager% &eest maintenant en &ccombat &eavec vous donc ne vous déconnectez pas !'
+ disabled-command: '&eVous ne pouvez pas utiliser le commandement &c%command% &ependant que vous êtes au combat.'
+ leave-broadcast: '&c%player% est parti alors qu''il était au combat avec %damager%'
+ items-broadcast: "&cLes items de &4%player% &cse trouvent à: &4%world%&c, &4%x%, %y%, %z%"
+ combat-expired-player: "&eVous ne vous battez plus contre &c%victim%&e."
+ combat-expired: '&eVous n''êtes plus au combat et vous avez le droit d''arrêter.'
+ enderpearl-disabled-during-combat: "&cVous ne pouvez pas utiliser d'enderpearls pendant le combat !"
+ chorusfruit-disabled-during-combat: "&cVous ne pouvez pas utiliser les fruits du chœur pendant les combats !"
+ totem-disabled-during-combat: "&cVous ne pouvez pas utiliser des totems d'éternité pendant le combat !"
+ deny-pvp-deny-enter: "&cVous ne pouvez pas entrer dans cette région pendant un combat !"
+ display-time-bossbar: "&e&o%time%s &r&c&lCombat Mode &r&e&o%time%s"
+ display-time-actionbar: "%progressbar% &r&e- &c%time%s"
+ 
+# PANNEAU DE MORT
+death-sign:
+  line1: "R.I.P"
+  line2: "%player%"
+  line3: "Décédé pour"
+  line4: "combatlogging"
+ 
+##############################################################################################################
+# Causes de décès                                                                                            #
+##############################################################################################################
+# Ici, vous pouvez configurer vos propres messages de décès.                                                 #
+# Pour les utiliser, veuillez activer l'option messages de décès dans le menu de configuration ( /dc menu )  #
+##############################################################################################################
+death-causes:
+  void: "&c%player% &eest tombé dans le vide"
+  void_player: "&c%player% &ea été jeté dans le vide par &c%killer% &e(&c%hearts%&e)"
+  shoot: "&c%player% &ea été abattu par &c%killer% &e(&c%hearts%&e)"
+  drown: "&c%player% &es'est noyé"
+  lava: "&c%player% &ea pris un bain de lave"
+  fall: "&c%player% &ene savait pas que la colline était aussi haute"
+  magic: "&c%player% &ene savait pas que cette potion était empoisonnée"
+  magic_player: "&c%player% &ea été empoisonné par &c%killer% &e(&c%hearts%&e)"
+  fire: "&c%player% &ejouait avec le feu"
+  none: "&c%player% &eest mort"
+  sword_kill: "&c%player% &ea été poignardé par &c%killer% &e(&c%hearts%&e) en utilisant l'arme suivante: &c&o%item_name%"
+
+##############################################################################################################
+# Corps                                                                                                      #
+##############################################################################################################
+# Ce sont les messages aléatoires au-dessus des cadavres. Vous pouvez en ajouter autant que vous le souhaitez#
+##############################################################################################################
+corpses-messages:
+- "&c&o%player% &e&oa pris la honte"
+- "&c&lR.I.P %player%"
+- "&c%player% &es'est fait détruire !"
+- "&c%player% &eest enterré ici !"
+- "&c%player% &ene l'a pas vu venir !"
+
+##############################################################################################################
+# Système de classement par point                                                                            #
+##############################################################################################################
+# Si cette option est activée                                                                                #
+# vous pouvez modifier tous les messages concernant le système de classement par points ici                  #
+##############################################################################################################
+Points-Ranking-System:
+  unknown-input-stats: "&cEntrée inconnue: Veuillez choisir l'une de ces statistiques: KILLS (tués), DEATHS (morts), POINTS (points), COMBATLOGS (journal de combat)"
+  not-loaded-atm: "&cCes statistiques ne sont pas chargées pour le moment ! Réessayez plus tard !"
+  disabled: "&cLe système de classement a été désactivé !"
+  reset: "&cVos statistiques ont été effacées !"
+  reset-other: "&cLes statistiques de &4%player% &cont été supprimées !"
+  add-kill: "&a&l+1 &r&7Tuer"
+  add-death: "&c&l+1 &r&7Mort"
+  add-points: "&a&l+%points% &r&7Points"
+  remove-points: "&c&l%points% &r&7Points"
+  your-rank: "&7Votre rang est: &a#%rank%&r&7. Calculé par %value%"
+  players-rank: "&7Le rang de %player% est: &e#%rank%&r&7. Calculé par %value%"
+  
+  # Mise en page du classement
+  ranking-placeholder-format: "&e%rank%. &b%player% &7- &e%amount%"
+  
+  # Disposition des panneaux de classement
+  sign-layout:
+  - "#%rank%"
+  - " "
+  - "&o%player%"
+  - "%amount% %value%"
+  
+  # Message affiché lors de la saisie des statistiques /dc stats
+  pvp-stats:
+  - "&4&m#&c&m---------------------------------&4&m#"
+  - "                  &cPvP Stats                  "
+  - "                  &e%player%                   "
+  - " "
+  - "&8- &cTués: &e%kills%"
+  - "&8- &cMorts: &e%deaths%"
+  - "&8- &cT/M: &e%kd%"
+  - "&8- &cCombatlogs: &e%combatlogs%"
+  - "&8- &cPoints: &e%points%"
+  - "&8- &cSérie: &e%streak%"
+  - "&8- &cMeilleure série: &e%highest_streak%"
+  - "&8- &cRang: &e#%rank% &7(%sort%)"
+  - "&4&m#&c&m---------------------------------&4&m#"
+  
+  # Messages de chargement ( Ces messages apparaissent lorsque le plugin est en cours de chargement
+  # vos statistiques. Pour les désactiver, réglez la valeur sur "none".
+  loading-data: "&7&oChargement des données..."
+  stats-loaded: "&7Vos statistiques ont été chargées."
+
+##############################################################################################################
+# Générale                                                                                                   #
+##############################################################################################################
+# Voici quelques messages généraux du plugin                                                                 #
+############################################################################################################## 
+general:
+
+  # Messages généraux des plugins
+  no-permission: "&cVous n'avez pas de permission !"
+  help-message: "&7Tapez &c/%cmd% help &7pour obtenir de l'aide !"
+  
+  # Liste d'aide pour vos joueurs
+  help-list:
+  - "&4&m#&c&m---------------------------------&4&m#"
+  - "                  &cDeluxeCombat               "
+  - " "
+  - "&8- &c/%cmd% help &8> &7Montre ce message"
+  - "&8- &c/tag [Player] &8> &7Indique votre statut de combattant"
+  - "&8- &c/pvpstats [Player] &8> &7Montre vos statistiques pvp"
+  - "&8- &c/pvpstats reset &8> &7Réinitialiser vos statistiques"
+  - "&8- &c/grace &8> &7Indique votre statut de grâce"
+  - "&8- &c/grace disable &8> &7Désactive votre grâce"
+  - "&8- &c/sellhead&8> &7Vendez la tête dans votre main"
+  - "&8- &c/%cmd% lb (Stats) &8> &7Affiche le classement des statistiques"
+  - " "
+  - "&8(): &cObligatoire&7, []: &cFacultatif"
+  - "&4&m#&c&m---------------------------------&4&m#"
+
+  # Message lorsque vous recevez un coup de tête sur un joueur
+  headshot-actionbar: "&a&oTir dans la tête de %player%!"
+  
+  # Messages for the damage indicator
+  damage-indicator:
+    critical: "&c&lCoup critique! &e&o(- %damage%)"
+    normal-damage: "&c&o- %damage%"
+  
+  spawnpoint-msg: "&eVous avez été téléporté à: %spawnpoint%"
+  spawnpoint-title: "%spawnpoint%"
+  spawnpoint-subtitle: "&f&oBienvenue %player%!"
+  
+  # Gold / God apple restrictions
+  please-wait-gold-apple: "&cVeuillez attendre &4%time% &cavant de pouvoir utiliser la prochaine pomme d'or"
+  please-wait-god-apple: "&cVeuillez attendre &4%time% &cavant de pouvoir utiliser la prochaine pomme de Notch"
+  
+  # Enderpearl / Chorusfruit / Totem
+  enderpearls-disabled: "&cLes enderpearls est désactivé sur ce serveur"
+  chorusfruits-disabled: "&cLes chorusfruits sont désactivés sur ce serveur"
+  totems-disabled: "&cLes totems d'indéfectible sont désactivés sur ce serveur"
+  please-wait-enderpearl: "&cVeuillez attendre &4%time% &cjusqu'à ce que vous puissiez à nouveau utiliser un endepearl"
+  please-wait-chorusfruit: "&cVeuillez attendre &4%time% &cjusqu'à ce que vous puissiez à nouveau utiliser un fruit de choeur"
+  please-wait-totem: "&cVeuillez attendre &4%time% &cjusqu'à ce que vous puissiez utiliser le prochain totem de l'immortel"
+  please-wait-actionbar: "&6&l%material% &r&f- (&e%time%s&f)"
+  
+  # Système de grâce
+  grace-left: "&a%player% est pour la prochaine &2%time% &aprotégé contre tous les types de dommages !"
+  no-grace-active: "&cVous n'avez pas de protection active."
+  grace-disabled: "&cVous avez désactivé votre protection. Vous n'êtes plus à l'abri de tous les types de dommages !"
+  grace-disabled-by-admin: "&c%player% a désactivé votre protection. Vous n'êtes plus à l'abri de tous les types de dommages !"
+  player-has-grace-active: "&cVous ne pouvez pas vous battre avec ce joueur car il bénéficie d'une protection active !"
+  you-have-grace-active: "&cVous ne pouvez pas vous battre avec ce joueur parce que vous avez une protection active ! Attendre &4%time% &cou taper &4/grace disable"
+  
+  # Abus de la lutte contre les meurtres
+  anti-kill-abuse: "&cVous avez tué %victim% %amount% fois! Vous pouvez le tuer à nouveau dans &4%time%!"
+  reached-kill-max: "&cVous avez atteint le montant maximum (%amount%) de meurtres avec %victim%! Vous ne pouvez pas le tuer pour: &4%time%"
+  
+  # Messages de combat
+  flying-not-allowed-during-combat: "&cIl est interdit de voler pendant les combats !"
+  potion-disabled: "&cCette potion est désactivée sur le serveur !"
+  player-not-online: "&cCe joueur n'est pas en ligne !"
+  player-not-in-combat: "&a%player% &7n'est pas en mode combat !"
+  player-in-combat: "&c%player% &7est en mode combat !"
+  still-in-combat: "&eVous êtes toujours en &ccombat&e ! Ne partez pas !"
+  not-in-combat: "&aVous n'êtes pas au combat ! Vous pouvez quitter le serveur !"
+  deny-gamemode: "&cVous ne pouvez pas frapper les autres joueurs pendant que vous êtes en mode de jeu créatif !"
+  
+  # Messages en chambre forte
+  vault-add-money-kill: "&7Vous avez gagné &a%amount% %currency% &7pour avoir tué &c%victim%"
+  vault-remove-money-death: "&7Vous avez perdu &c%amount% %currency% &7car vous êtes mort."
+  vault-remove-money-lost-head: "&7Vous avez perdu &c%amount% %currency% &7parce que vous avez perdu votre tête lors d'un combat !"
+  
+  # Messages Sellhead
+  sellhead-successfully-redeemed: "&eVous avez racheté avec succès la tête démembrée de &6%player%&e. Vous avez reçu &a%amount% %currency%&e."
+  sellhead-already-redeemed: "&eVous avez &cdéjà &eréévalué cette tête."
+  sellhead-unknown-head: "&eCette tête a déjà été rachetée ou est invalide."
+  sellhead-displayname: "&eTête démembrée de: &c%victim%"
+  sellhead-lore: "&fValeur: &e%amount% %currency%=&f&oPeut être vendu avec /sellhead"
+  
+  # Messages de la barre de santé
+  healthbar-bossbar-message: "&cSanté de %player% &e(&c%health% ❤&e)"
+  
+  # Messages de décès
+  cannot-teleport-to-death-location: "&cVotre lieu de décès a été supprimé ou vous n'en avez pas !"
+  teleported-to-death-location: "&aVous avez été téléporté sur le lieu de votre dernier décès."
+  
+  # Messages de commande de basculement PVP
+  pvp-toggle-cmd-has-been-disabled: "&cVous ne pouvez pas utiliser cette commande car elle a été désactivée par un administrateur du serveur !"
+  pvp-toggle-enabled: "&eVous avez &aactivé &evotre pvp. Vous pouvez maintenant &avous battre &eavec d'autres joueurs !"
+  pvp-toggle-disabled: "&eVous ne pouvez plus &cvous battre &eavec d'autres joueurs !"
+  pvp-still-disabled: "&eVotre pvp est &cdésactivé&e! Vous pouvez le réactiver avec &c/togglepvp"
+  player-has-pvp-disabled: "&eVous &cne pouvez pas &evous battre avec ce joueur, car il a le pvp est désactivé !"
+  
+  # Formatage du temps
+  time:
+    hours: "heures"
+    hour: "heure"
+    minutes: "minutes"
+    minute: "minute"
+    seconds: "secondes"
+    second: "seconde"
+  
+  please-wait-before: "&cVeuillez attendre &4%time% &cavant de pouvoir recommencer !" 
+    
+  # Tous les messages du système kill recap
+  # !!! Utilisez '=' pour séparer les lignes de la description !!!
+  kill-recap:
+  
+    # Message diffusé dans le chat
+    click-to-view-recap: "&7Cliquez pour voir le &e&lRECAP &r&7de ce combat !"
+    
+    inv-name: "&4Récapitulatif du meurtre"
+    
+    close: "&c&lFermer"
+    close-lore: "&7Cliquez pour fermer=&7la récapitulation de la mise à mort"
+    
+    exit: "&c&lSortie"
+    exit-lore: "&7Cliquez pour quitter=&7le menu récapitulatif"
+    
+    back: "&e&lRetour"
+    back-lore: "&7Cliquez pour revenir en arrière"
+    
+    list-recap: "&6%killer% &b&lvs. &r&c%victim%"
+    list-recap-lore: "&7Voir les informations sur ce combat=&7Date: %date%"
+    
+    victim: "&cVictime: &4%victim%"
+    victim-lore: "&7Tué par &6%killer%"
+    
+    killer-weapon: "&c&lArmes: &r%item_name%"
+    killer-weapon-lore: "&7Arme utilisée"
+    
+    damage-dealt: "&cDégâts subis"
+    damage-dealt-lore: "&7Le préjudice subi par la victime=&7a traité pendant le combat= =&eDégâts subis: &c%damage_dealt%"
+    
+    damage-taken: "&eDommages subis"
+    damage-taken-lore: "&7Le préjudice subi par la victime=&7a pris pendant le combat= =&eDommages subis: &c%damage_taken%"
+    
+    killer: "&eTueur: &6%killer%"
+    killer-lore: "&7Ce joueur a tué &c%victim%= =&eDommages subis: &c%damage_taken%=&eCoeurs restants: &d%hearts_left%=&eDommages et intérêts: &c%damage_dealt%"
+    
+    potioneffects: "&dEffets de potion"
+    potioneffects-lore: "&7La victime a été endommagée par=&7ces effets de potion: %potioneffects%"
+    potioneffect-lore: "&e- &5%potiontype%"
+    
+    assistants: "&bAssistants"
+    assistants-lore: "&7Ces joueurs ont aidé=&7le tueur: %assistants%"
+    assistant-lore: "&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%"
+    
+##############################################################################################################
+# Amusez-vous bien avec DeluxeCombat sur votre serveur, vous avez atteint la fin.                            #
+# Vous aimez la ressource ? Envisagez de la passer en revue sur le fil des ressources.                       #
+##############################################################################################################

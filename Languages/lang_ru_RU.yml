@@ -1,0 +1,260 @@
+##############################################################################################################
+#                                                                                                            #
+# ______     _                _____                 _           _                                            #
+# |  _  \   | |              /  __ \               | |         | |                                           #
+# | | | |___| |_   ___  _____| /  \/ ___  _ __ ___ | |__   __ _| |_                                          #
+# | | | / _ \ | | | \ \/ / _ \ |    / _ \| '_ ` _ \| '_ \ / _` | __|                                         #
+# | |/ /  __/ | |_| |>  <  __/ \__/\ (_) | | | | | | |_) | (_| | |_                                          #
+# |___/ \___|_|\__,_/_/\_\___|\____/\___/|_| |_| |_|_.__/ \__,_|\__|                                         #
+#------------------------------------------------------------------------------------------------------------#
+#                                                                                                            #
+# Thank you for purchasing DeluxeCombat - An ultimate powerful combat resource for every server              #
+#                                                                                                            #             
+# This is one of the configuration files of the DeluxeCombat plugin.                                         #
+# Here, you can configure the messages. If you want to change all settings, switch to the config.yml         #
+#                                                                                                            #
+# The plugin supports following server versions: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x, 1.15  #
+#                                                                                                            #
+# Any problems? Write me a private message on spigot! Spigot: www.spigotmc.org/members/199727/               #
+# To get quick support please also consider joining my discord server: discordapp.com/invite/MGTSYjS         #
+#                                                                                                            #
+# ~ timderspieler                                                                                            #
+# Translation by ninetown                                                                                    #
+#                                                                                                            #
+##############################################################################################################
+
+##############################################################################################################
+#                                                                                                            #
+# To disable a certain message, replace the value with "none" !                                              #
+#                                                                                                            #
+##############################################################################################################
+
+##############################################################################################################
+# Combatlogger                                                                                               #
+##############################################################################################################
+# All messages regarding combat logging                                                                      #
+##############################################################################################################
+
+combat-logger:
+  potion-disabled-during-combat: '&cЭто зелье отключено во время боя!'
+  damage-to-enemy: '&eВы в режиме &cбоя &eс игроком &6%victim%&e, выход с сервера запрещён.'
+  damage-from-enemy: '&eИгрок &6%damager% &eв &cбою &eс вами, выход с сервера запрещён.'
+  disabled-command: '&eВы не можете использовать команду &c%command% &eво время боя.'
+  leave-broadcast: '&cИгрок %player% вышел с сервера во время боя с %damager%'
+  items-broadcast: '&cВещи игрока &4%player%''s &cнаходятся: &4%world%&c, &4%x%, %y%, %z%'
+  combat-expired-player: '&eВы больше не в бою против &c%victim%&e.'
+  combat-expired: '&eВы больше &aне &eв режиме боя и можете выходить с сервера без наказания.'
+  enderpearl-disabled-during-combat: '&cВы не божете использовать эндер жемчуг во время боя!'
+  chorusfruit-disabled-during-combat: '&cВы не можете использовать хорус во время боя!'
+  totem-disabled-during-combat: '&cВы не можете использовать тотем бессмертия во время боя!'
+  deny-pvp-deny-enter: '&cВы не можете войти в этот регион во время боя!'
+  display-time-bossbar: '&e&o%time%s &r&c&lРежим боя &r&e&o%time%s'
+  display-time-actionbar: '%progressbar% &r&e- &c%time%s'
+  
+# DEATH-SIGN
+death-sign:
+  line1: 'Р.И.П'
+  line2: '%player%'
+  line3: 'Умер за'
+  line4: 'выход с PvP'
+  
+##############################################################################################################
+# Death causes                                                                                               #
+##############################################################################################################
+# Here you can setup your own death messages.                                                                #
+# To use them, please enable the death messages option in the config menu ( /dc menu )                       #
+##############################################################################################################
+death-causes:
+  void: '&c%player% &eупал в бездну'
+  void_player: '&c%player% &eбыл сброшен в бездну игроком &c%killer% &e(&c%hearts%&e)'
+  shoot: '&c%player% &eбыл подстрелен &c%killer% &e(&c%hearts%&e)'
+  drown: '&c%player% &eутонул'
+  lava: '&c%player% &eискупался в лаве'
+  fall: '&c%player% &eне думал что это так высоко...'
+  magic: '&c%player% &eне думал что этот пузырёк был отравлен'
+  magic_player: '&c%player% &eбыл отравлен &c%killer% &e(&c%hearts%&e)'
+  fire: '&c%player% &eдоигрался с огнём'
+  none: '&c%player% &eумер'
+  sword_kill: '&c%player% &eбыл зарезан &c%killer% &e(&c%hearts%&e) который использовал вещь: &c&o%item_name%'
+  
+##############################################################################################################
+# Corpses                                                                                                    #
+##############################################################################################################
+# These are the random messages above the corpses. You can add as many you want.                             #
+##############################################################################################################
+corpses-messages:
+- '&c&lR.I.P %player%'
+- '&eG3t R3kt &c%player%&e!'
+- '%player% сгорел здесь!'
+- '&c%player% &eне заметил кое чего!'
+
+##############################################################################################################
+# Point Ranking System                                                                                       #
+##############################################################################################################
+# If enabled, you can edit all messages regarding the point ranking system here                              #
+##############################################################################################################
+Points-Ranking-System:
+  unknown-input-stats: '&cОшибка: Выберите одну из статистик: KILLS, DEATHS, POINTS, COMBATLOGS'
+  not-loaded-atm: '&cСтатистика не была загружена на данный момент! Попробуйте позже!'
+  disabled: '&cСистема рангов была выключена!'
+  reset: '&cВаша статистика была очищена!'
+  reset-other: '&cСтатистика игрока &4%player% &cбыла очищена!'
+  add-kill: '&a&l+1 &r&7Убийство'
+  add-death: '&c&l+1 &r&7Смерть'
+  add-points: '&a&l+%points% &r&7Очков'
+  remove-points: '&c&l%points% &r&7Очков'
+  your-rank: '&7Ваш ранг: &a#%rank%&r&7. Рассчитано - %value%'
+  players-rank: '&7Ранг игрока %player%: &e#%rank%&r&7. Рассчитано - %value%'
+  
+  # Ranking placeholder layout
+  ranking-placeholder-format: '&e%rank%. &b%player% &7- &e%amount%'
+  
+  # Ranking sign layout
+  sign-layout:
+  - '#%rank%'
+  - ' '
+  - '&o%player%'
+  - '%amount% %value%'
+  
+  # Message displayed when typing in /dc stats
+  pvp-stats:
+  - '&4&m#&c&m---------------------------------&4&m#'
+  - '                  &cPvP статистика                  '
+  - '                  &e%player%                   '
+  - ' '
+  - '&8- &cУбийства: &e%kills%'
+  - '&8- &cСмерти: &e%deaths%'
+  - '&8- &cУ/С: &e%kd%'
+  - '&8- &cВыходы с PvP: &e%combatlogs%'
+  - '&8- &cОчки: &e%points%'
+  - '&8- &cСтрик: &e%streak%'
+  - '&8- &cНаибольший стрик: &e%highest_streak%'
+  - '&8- &cРанг: &e#%rank% &7(%sort%)'
+  - '&4&m#&c&m---------------------------------&4&m#'
+  
+  # Loading messages ( These messages appear when the plugin is loading
+  # your stats. To disable them set the value to "none"
+  loading-data: '&7&oЗагружаем данные...'
+  stats-loaded: '&7Ваша статистика была загружена.'
+  
+##############################################################################################################
+# General                                                                                                    #
+##############################################################################################################
+# Here are some general messages of the plugin                                                               #
+############################################################################################################## 
+general:
+
+  no-permission: '&cУ вас нет прав!'
+  help-message: '&7Напишите &c/%cmd% help &7для помощи!'
+  
+  help-list:
+  - '&4&m#&c&m---------------------------------&4&m#'
+  - '                  &cDeluxeCombat               '
+  - ' '
+  - '&8- &c/%cmd% help &8> &7Показывает помощь'
+  - '&8- &c/tag [Player] &8> &7Показывает ваш статус боя'
+  - '&8- &c/pvpstats [Player] &8> &7Показывает вашу PvP статистику'
+  - '&8- &c/pvpstats reset &8> &7Сбрасывает вашу PvP статистику'
+  - '&8- &c/grace &8> &7Показывает вашу защиту новичка'
+  - '&8- &c/grace disable &8> &7Выключает защиту новичка'
+  - '&8- &c/sellhead&8> &7Продает голову в вашей руке'
+  - '&8- &c/%cmd% lb (Stats) &8> &7Показывает таблицу лидеров'
+  - ' '
+  - '&8(): &cНеобходимо&7, []: &cОпционально'
+  - '&4&m#&c&m---------------------------------&4&m#'
+  
+  headshot-actionbar: '&a&oВы хедшотнули игрока %player%!'
+  
+  please-wait-gold-apple: '&cПожалуйста подождите &4%time% &cчтобы снова использовать золотое яблоко.'
+  please-wait-god-apple: '&cПожалуйста подождите &4%time% &cчтобы снова использовать золотое яблоко.'
+  
+  enderpearls-disabled: '&cЭндер жемчуг запрещён на этом сервере.'
+  chorusfruits-disabled: '&cХорус запрещён на этом сервере.'
+  totems-disabled: '&cТотем бессмертия запрещён на этом сервере.'
+  please-wait-enderpearl: '&cПожалуйста подождите &4%time% &cчтобы снова использовать эндер жемчуг.'
+  please-wait-chorusfruit: '&cПожалуйста подождите &4%time% &cчтобы снова использовать хорус.'
+  please-wait-totem: '&cПожалуйста подождите &4%time% &cчтобы снова использовать тотем бессмертия.'
+  
+  grace-left: '&aНовичок %player% защищен от всех типов урона на &2%time%&a!'
+  no-grace-active: '&cУ вас нет активной защиты новичка.'
+  grace-disabled: '&cВы включили защиту новичка. У вас больше нет иммунитета против против всех видов урона!'
+  grace-disabled-by-admin: '&cИгрок %player% выключил вашу защиту новичка. У вас больше нет иммунитета против всех видов урона!'
+  player-has-grace-active: '&cВы не можете вступить с бой с игроком потому что он имеет активную защиту новичка!'
+  you-have-grace-active: '&cВы не можете вступить в бой с игроком потому что у вас включена защита новичка! Подождите &4%time% &coили напишите &4/grace disable'
+  
+  anti-kill-abuse: '&cВы убили игрока %victim% %amount% раз! Вы сможете вступить с ним в бой через &4%time%!'
+  reached-kill-max: '&cВы достигли максимального количества (%amount%) убийств игрока %victim%! Вы сможете вступить с ним в бой через: &4%time%'
+  
+  flying-not-allowed-during-combat: '&cЛетать во время боя запрещено!'
+  potion-disabled: '&cЭто зелье выключено на сервере!'
+  
+  player-not-online: '&cЭтот игрок не онлайн!'
+  player-not-in-combat: '&7Игрок &a%player% &7не в режиме боя!'
+  player-in-combat: '&7Игрок &c%player% &7находится в режиме боя!'
+  still-in-combat: '&eВы всё ещё в &cрежмие боя&e! Выход с сервера будет наказан!'
+  not-in-combat: '&aВы больше не в режиме боя! Сервер можно покинуть без наказания!'
+  deny-gamemode: '&cВы не можете начать бой с игроком когда у вас режим креатив!'
+  
+  vault-add-money-kill: '&7Вы получили &a%amount% %currency% &7за убийство &c%victim%&7!'
+  vault-remove-money-death: '&7Вы потеряли &c%amount% %currency% &7из-за смерти во время боя!'
+  vault-remove-money-lost-head: '&7Вы потеряли &c%amount% %currency% &7из-за потери вашей головы во время боя!'
+  
+  sellhead-successfully-redeemed: '&eВы успешно получили голову игрока of &6%player%&e. Вы получили &a%amount% %currency%&e.'
+  sellhead-already-redeemed: '&eВы &cуже &eполучили эту голову.'
+  sellhead-unknown-head: '&eЭта голова уже получена или испорчена.'
+  sellhead-displayname: '&eПолучена голова игрока: &c%victim%'
+  sellhead-lore: '&fСтоимость: &e%amount% %currency%=&f&oМожет быть продана /sellhead'
+  
+  healthbar-bossbar-message: '&cЗдоровье игрока %player% &e(&c%health% ❤&e)'
+  
+  cannot-teleport-to-death-location: '&cВаша точка смерти удалена или её не существует!'
+  teleported-to-death-location: '&aВы были телепортированы на точку последней смерти.'
+  
+  pvp-toggle-cmd-has-been-disabled: '&cВы не можете использовать эту команду, потому что она отключена администратором!'
+  pvp-toggle-enabled: '&eВы &aвключили &ePvP для себя. Теперь вы можете &aвступать в бой &eс другими игроками!'
+  pvp-toggle-disabled: '&eВы &cвыключили &ePvP для себя. Вы не можете &cвступать в бой &eс другими игроками!'
+  pvp-still-disabled: '&eВы &cвыключили &eдля себя PvP! Включить обратно &c/togglepvp'
+  player-has-pvp-disabled: '&eВы &cне можете &eвступить в бой с этим игроком, потому что он выключил для себя PvP!'
+  
+  time:
+    hours: 'часов'
+    hour: 'час'
+    minutes: 'минут'
+    minute: 'минута'
+    seconds: 'секунд'
+    second: 'секунда'
+    
+  please-wait-before: '&cПожалуйста подождите &4%time% &cчтобы сделать это снова!'
+  
+  kill-recap:
+    click-to-view-recap: '&7Нажмите чтобы посмотреть &e&lПОВТОР &r&7этого боя!'
+    inv-name: '&4Повтор боя'
+    close: '&c&lЗакрыть'
+    close-lore: '&7Нажмите чтобы закрыть=&7повтор боя'
+    exit: '&c&lВыйти'
+    exit-lore: '&7Нажите чтобы выйти=&7из меню повторов'
+    back: '&e&lНазад'
+    back-lore: '&7Нажмите чтобы вернуться назад'
+    list-recap: '&6%killer% &b&lпротив. &r&c%victim%'
+    list-recap-lore: '&7Посмотреть информацию об этом бое=&7Дата: %date%'
+    victim: '&cЖертва: &4%victim%'
+    victim-lore: '&7Убит &6%killer%'
+    killer-weapon: '&c&lОружие: &r%item_name%'
+    killer-weapon-lore: '&7Использовал оружие'
+    damage-dealt: '&cУрона нанесено'
+    damage-dealt-lore: '&7Урона нанесено потерпевшим=&7во время боя= =&eУрона нанесено: &c%damage_dealt%'
+    damage-taken: '&eУрона получено'
+    damage-taken-lore: '&7Урона получено потерпевшим=&7во время боя= =&eУрона получено: &c%damage_taken%'
+    killer: '&eУбийца: &6%killer%'
+    killer-lore: '&7Этот игрок убил &c%victim%= =&eУрона получено: &c%damage_taken%=&eСердец осталось: &d%hearts_left%=&eУрона нанесено: &c%damage_dealt%'
+    potioneffects: '&dЭффекты зелий'
+    potioneffects-lore: '&7Потерпевший получил урон=&7от этих эффектов зелий: %potioneffects%'
+    potioneffect-lore: '&e- &5%potiontype%'
+    assistants: '&bПомощи'
+    assistants-lore: '&7Эти игроки помогли убийце=&7убить игрока: %assistants%'
+    assistant-lore: '&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%'
+    
+  spawnpoint-msg: '&eВы были телепортированы: %spawnpoint%'
+  spawnpoint-title: '%spawnpoint%'
+  spawnpoint-subtitle: '&f&oДобро пожаловать, %player%!'
+  please-wait-actionbar: '&6&l%material% &r&f- (&e%time%s&f)'
