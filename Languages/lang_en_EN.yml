@@ -49,6 +49,7 @@ combat-logger:
  deny-pvp-deny-enter: "&cYou cant enter this region during a fight!"
  display-time-bossbar: "&e&o%time%s &r&c&lCombat Mode &r&e&o%time%s"
  display-time-actionbar: "%progressbar% &r&e- &c%time%s"
+ player-is-already-fighting: "&c%victim% &eis already fighting with another player! You cant hit him right now."
  
 # DEATH-SIGN
 death-sign:
@@ -138,6 +139,73 @@ Points-Ranking-System:
   stats-loaded: "&7Your stats have been loaded."
 
 ##############################################################################################################
+# Bounty                                                                                                     #
+##############################################################################################################
+# Bounty messages                                                                                            #
+##############################################################################################################
+bounty:
+  bounty: "Bounty"
+  someone: "Someone"
+  created-message-list:
+  - " "
+  - " &6&lBounty"
+  - " &fYou have successfully set a bounty on &e%target%&f."
+  - " "
+  - " &fThe first player that kills this player will get &e%bounty%$&f."
+  - " &e%percentage%% &fof the bounty (&e%tax%$&f) were taken as tax."
+  - " "
+  bounty-on-you-message-list:
+  - " "
+  - " &6&lBounty"
+  - " &c%initiator% &fhas set a bounty on you!"
+  - " &fThe first player that kills you gets &e%bounty%$&f!"
+  - " "
+  bounty-broadcast-message-list:
+  - " "
+  - " &6&lBounty Broadcast"
+  - " &e%initiator% &fhas set a bounty on &c%target%&f!"
+  - " &fThe first player that kills &c%target% &fgets &e%bounty%$&f!"
+  - " "
+  bounty-claimed-broadcast: "&e%player% &fhas claimed &e%target%'s &fbounty! (&e$%bounty%&f)"
+  bounty-claimed: "&eYou have claimed &c%target%'s &ebounty! You gained &a$%bounty%&e!"
+  
+  no-bounty-on-target: "&eThere is no bounty on &c%target%&e!"
+  bounty-information-list:
+  - " "
+  - " &6&lBounty information"
+  - " &eBounty on: &f%target%"
+  - " &eBounty: &f$%bounty%"
+  - " &eTime left: &f%time%"
+  - " "
+  
+  bounty-expired-broadcast: "&fThe bounty on &e%target% &fis expired."
+  bounty-expired-initiator: "&fYour bounty on &e%target% &fis expired. You got &e$%bounty% &fback."
+  
+  accept-item: "&aAccept"
+  accept-item-lore: "&7Click to create the bounty"
+  
+  cancel-item: "&cCancel"
+  cancel-item-lore: "&7Click to abbord the bounty"
+  
+  anonymous-item-on: "&eAnonymous: &aOn"
+  anonymous-item-on-lore: "&7This bounty will be set anonymous.=&7That means, nobody can see that=&7you are the initiator of it!"
+  anonymous-item-off: "&eAnonymous: &cOff"
+  anonymous-item-off-lore: "&7This bounty wont be set anonymous.=&7That means, everybody can see that=&7you are the initiator of it!"
+  
+  target-item: "&eTarget: &b%target%"
+  target-item-lore: "&7Click to change the target."
+  
+  bounty-amount-item: "&eBounty: &b$%with_tax%"
+  bounty-amount-item-lore: "=&foriginal Bounty: &c%without_tax%=&f- Tax (&7%tax%&f): %tax_amount%= =&7Click to change bounty."
+  
+  type-in-targetname: "&ePlease type in the name of the target:"
+  type-in-bounty: "&ePlease type in a bounty value: &f(Min: $%min%, Max: $%max%)"
+  already-bounty-on-target: "&eThere is already an active bounty set on that target!"
+  cant-set-bounty-on-yourself: "&eYou cant set a bounty on &cyourself&e!"
+  target-not-able-to-fight: "&c%target% &eis not able to fight at the moment!"
+  setup-cancelled: "&eBounty setup cancelled."
+
+##############################################################################################################
 # General                                                                                                    #
 ##############################################################################################################
 # Here are some general messages of the plugin                                                               #
@@ -147,6 +215,8 @@ general:
   # General plugin messages
   no-permission: "&cYou dont have permission!"
   help-message: "&7Type in &c/%cmd% help &7for help!"
+  number-between: "&ePlease choose a number between &c%min% &eand %max%&e!"
+  not-a-number: "&c%input% &eis not a number!"
   
   # Help list for your players
   help-list:
@@ -164,6 +234,12 @@ general:
   - " "
   - "&8(): &cRequired&7, []: &cOptional"
   - "&4&m#&c&m---------------------------------&4&m#"
+  
+  # Here you can configure the placeholder messages
+  placeholder-messages:
+    yes-message: "&aYes"
+    no-message: "&cNo"
+    question-message: "???"
 
   # Message when you land a headshot on a player
   headshot-actionbar: "&a&oHeadshot for %player%!"
@@ -227,6 +303,7 @@ general:
   vault-add-money-kill: "&7You gained &a%amount% %currency% &7for killing &c%victim%"
   vault-remove-money-death: "&7You lost &c%amount% %currency% &7for dying"
   vault-remove-money-lost-head: "&7You lost &c%amount% %currency% &7because you lost your head during a fight!"
+  vault-not-enough-money: "&cYou dont have enough money! (&4%amount%&c)"
   
   # Sellhead messages
   sellhead-successfully-redeemed: "&eYou successfully redeemed the dismembered head of &6%player%&e. You received &a%amount% %currency%&e."
@@ -248,6 +325,12 @@ general:
   pvp-toggle-disabled: "&eYou have &cdisabled &eyour pvp. You can no longer &cfight &eother players!"
   pvp-still-disabled: "&eYou pvp is &cdisabled&e! Enabled it again with &c/togglepvp"
   player-has-pvp-disabled: "&eYou &ccannot &efight this player, because he has pvp disabled!"
+  pvp-toggle-cmd-disabled-in-this-world: "&cYou cant use this command in this world!"
+  
+  # Prevent lava / fire place in the range of a player that has a protection or pvp disabled
+  lava-fire-not-allowed: "&eYou cannot place &c%type% &enear this player because he has a protection or pvp disabled."
+  fire: "fire"
+  lava: "lava"
   
   # Time formatting
   time:
@@ -303,6 +386,8 @@ general:
     assistants: "&bAssistants"
     assistants-lore: "&7These players have assisted=&7the killer: %assistants%"
     assistant-lore: "&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%"
+    
+    fists: "fists"
     
 ##############################################################################################################
 # Have fun with DeluxeCombat on your server, you reached the end.                                            #
