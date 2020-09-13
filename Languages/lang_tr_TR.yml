@@ -34,27 +34,29 @@
 # All messages regarding combat logging                                                                      #
 ##############################################################################################################
 combat-logger:
- potion-disabled-during-combat: "&cBu iksir savaşta yasaklanmıştır."
- damage-to-enemy: '&eŞuan &6%victim% ile &csavaştasın. &eOyundan çıkma.'
- damage-from-enemy: '&eŞuan &6%damager% ile &csavaştasın. &eOyundan çıkma.'
- disabled-command: '&eSavaştayken &c%command% &ekomudunu kullanamazsın.'
- leave-broadcast: '&c%player% adlı oyuncu %damager% ile savaştayken oyundan çıktı.'
- items-broadcast: "&4%player% &cadlı oyuncunun eşyaları: &4%world%, &4%x%, &4%y%, &4%z% kordinatlarında."
- combat-expired-player: "&c%victim% &eile artık savaşta değilsin."
- combat-expired: '&eArtık savaşta &cdeğilsin &eve oyundan çıkabilirsin.'
- enderpearl-disabled-during-combat: "&cSavaştayken ender incisi kullanamazsın!"
- chorusfruit-disabled-during-combat: "&cSavaştayken chorus fruit kullanamazsın!"
- totem-disabled-during-combat: "&cSavaşta ölümsüzlük totemi kullanamazsın!"
- deny-pvp-deny-enter: "&cSavaştayken bu bölgeye giremezsin."
- display-time-bossbar: "&e&o%time% &r&c&lSavaş Modu &r&e&o%time%"
- display-time-actionbar: "%progressbar% &r&e- &c%time%"
+ potion-disabled-during-combat: "&cBu iksiri savaş sırasında kullanamazsınız!"
+ damage-to-enemy: '&eŞuan &6%victim% &eile &csavaşıyorsun.'
+ damage-from-enemy: '&6%damager% &esana saldırıyor.'
+ disabled-command: '&eSavaş esnasında &c%command% komutunu kullanamazsınız.'
+ leave-broadcast: '&c%player% %damager% ile savaşırken oyundan çıktı.'
+ items-broadcast: "&4%player% &eadlı oyuncunun eşyalarının konumu &4%world%&c, &4%x%, %y%, %z%"
+ combat-expired-player: "&c%victim%&e ile savaşınız sona erdi.."
+ combat-expired: '&eSavaş sona erdi.'
+ enderpearl-disabled-during-combat: "&cSavaş sırasında enderpearl kullanamazsınız!"
+ chorusfruit-disabled-during-combat: "&cSavaş sırasında nakarat bitkisini kullanamazsınız!"
+ totem-disabled-during-combat: "&cSavaş sırasında ölümsüzlük totemini kullanamazsınız!"
+ elytra-disabled-during-combat: "&cSavaş sırasında Elitrayı kullanamazsınız!"
+ deny-pvp-deny-enter: "&cSavaş sırasında bu bölgeye giremezsiniz!"
+ display-time-bossbar: "&e&o%time%s &r&c&lCombat Mode &r&e&o%time%s"
+ display-time-actionbar: "%progressbar% &r&e- &c%time%s"
+ player-is-already-fighting: "&c%victim% &eŞuan başka bir oyuncu ile savaşıyor."
  
 # DEATH-SIGN
 death-sign:
- line1: "Geberdi."
- line2: "%player%"
- line3: "Oyundan çıktığı"
- line4: "İçin öldü"
+  line1: "Geberdi."
+  line2: "%player%"
+  line3: "Oyundan çıktığı"
+  line4: "İçin öldü"
  
 ##############################################################################################################
 # Death causes                                                                                               #
@@ -63,29 +65,29 @@ death-sign:
 # To use them, please enable the death messages option in the config menu ( /dc menu )                       #
 ##############################################################################################################
 death-causes:
- void: "&c%player% &eboşluğa düştü."
- void_player: "&c%player%&e, &c%killer% &e(&c%hearts%&e) &etarafından boşluğa atıldı."
- shoot: "&c%player%, %killer% &e(&c%hearts%&e) &etarafından vuruldu"
- drown: "&c%player% &eboğuldu"
- lava: "&c%player% &elav banyosu yaptı"
- fall: "&c%player% &eyüksekliği hesaplayamadı"
- magic: "&c%player% &ezehirlendiğinin farkına varmadı"
- magic_player: "&c%player%, &c%killer% &e(&c%hearts%&e) tarafından zehirlendi.\n"
- fire: "&c%player% &eateşle oynadı"
- none: "&c%player% &eöldü."
- sword_kill: "&c%player%, &c%killer% &e(&c%hearts%&e) tarafından &c&o%item_name% &ekullanılarak öldürüldü."
- 
+  void: "&c%player% &eboşluğa düştü"
+  void_player: "&c%player% &e &c%killer% &e(&c%hearts%&e) &etarafından boşluğa atıldı."
+  shoot: "&c%player% &c%killer% &e(&c%hearts%&e) &etarafından vuruldu."
+  drown: "&c%player% &eboğuldu."
+  lava: "&c%player% &elavda cayır cayır yandı."
+  fall: "&c%player% &etepenin bu kadar yüksek olduğunu bilmiyormuş."
+  magic: "&c%player% &ebu iksirin zehirli olduğunu bilmiyormuş"
+  magic_player: "&c%player% &c%killer% &e(&c%hearts%&e) &etarafından zehirlendi."
+  fire: "&c%player% &eateşle oynarken kül öldü"
+  none: "&c%player% &eödlü"
+  sword_kill: "&c%player% &c%killer% &e(&c%hearts%&e) tarafından &c&o%item_name% kullanılarak öldürüldü"
+
 ##############################################################################################################
 # Corpses                                                                                                    #
 ##############################################################################################################
 # These are the random messages above the corpses. You can add as many you want.                             #
 ##############################################################################################################
 corpses-messages:
-- "&c&o%player% &e&oMağlubiyetin tadına baktı."
-- "&c&l%player% Burada geberdi."
-- "&c%player% &eYok edildi!"
-- "%player% burada yandı!"
-- "&c%player% &ebunu hesaplayamadı!"
+- "&c&o%player% &e&oSon nefesini verdi"
+- "&c&lR.I.P %player%"
+- "&eG3t R3kt &c%player%&e!"
+- "%player% burada öldü!"
+- "&c%player% &eBunun geldiğini görmedi!"
 
 ##############################################################################################################
 # Point Ranking System                                                                                       #
@@ -93,47 +95,116 @@ corpses-messages:
 # If enabled, you can edit all messages regarding the point ranking system here                              #
 ##############################################################################################################
 Points-Ranking-System:
- unknown-input-stats: "&cBilinmeyen argüman. Lütfen bunlardan birini seçin: KILLS, DEATHS, POINTS, COMBATLOGS"
- not-loaded-atm: "&cŞuan yüklenmiş hiçbir istatistik yok! Daha sonra tekrar deneyin!"
- disabled: "&cSıralama sistemi aktif değil!"
- reset: "&cİstatistiklerin sıfırlandı!"
- reset-other: "&4%player% &cadlı oyuncunun istatistikleri sıfırlandı!"
- add-kill: "&a&l+1 &r&7Öldürme"
- add-death: "&c&l+1 &r&7Ölüm"
- add-points: "&a&l+%points% &r&7Puan"
- remove-points: "&c&l%points% &r&7Puan"
- your-rank: "&7Sıralaman: &a#%rank%&r&7. %value% Olarak hesaplandı."
- players-rank: "&7%player% adlı oyuncunun sıralaması &e#%rank%&r&7. %value% Olarak hesaplandı."
- 
- # Ranking placeholder layout
- ranking-placeholder-format: "&e%rank%. &b%player% &7- &e%amount%"
- 
- # Ranking sign layout
- sign-layout:
+  unknown-input-stats: "&cGeçersiz kullanım: Lütfen bunlardan birini yazın: KILLS, DEATHS, POINTS, COMBATLOGS"
+  not-loaded-atm: "&cİstatistikler yüklenemedi! Daha sonra tekrar deneyin!"
+  disabled: "&cSıralama sistemi kapatıldı!"
+  reset: "&cİstatistiklerin sıfırlandı!"
+  reset-other: "&c&4%player% &cadlı oyuncunun istatistikleri sıfırlandı!"
+  add-kill: "&a&l+1 &r&7Öldürme"
+  add-death: "&c&l+1 &r&7Ölme"
+  add-points: "&a&l+%points% &r&7Puan"
+  remove-points: "&c&l%points% &r&7Puan"
+  your-rank: "&7Şuanki sıralaman: &a#%rank%&r&7. Calculated by %value% &edeğerinden ayarlandı"
+  players-rank: "&7%player% adlı oyuncunun sıralaması: &e#%rank%&r&7. %value% &edeğerinden ayarlandı"
+  
+  # Ranking placeholder layout
+  ranking-placeholder-format: "&e%rank%. &b%player% &7- &e%amount%"
+  
+  # Ranking sign layout
+  sign-layout:
   - "#%rank%"
   - " "
   - "&o%player%"
   - "%amount% %value%"
   
- # Message displayed when typing in /dc stats
- pvp-stats:
+  # Message displayed when typing in /dc stats
+  pvp-stats:
   - "&4&m#&c&m---------------------------------&4&m#"
-  - "                  &cPvP Sıralaması                  "
-  - "                  &e%player%                  "
+  - "                  &cPvP İstatistikleri                  "
+  - "                       &e%player%                   "
   - " "
-  - "8- &cÖldürme: &e%kills%"
-  - "&8- &cÖlüm: &e%deaths%"
+  - "&8- &cÖldürme: &e%kills%"
+  - "&8- &cÖlme: &e%deaths%"
   - "&8- &cK/D: &e%kd%"
-  - "&8- &cGirilen Savaş: &e%combatlogs%"
+  - "&8- &cCeza: &e%combatlogs%"
   - "&8- &cPuan: &e%points%"
+  - "&8- &cSeri: &e%streak%"
+  - "&8- &cEn yüksek seri: &e%highest_streak%"
   - "&8- &cSıralama: &e#%rank% &7(%sort%)"
   - "&4&m#&c&m---------------------------------&4&m#"
   
- # Loading messages ( These messages appear when the plugin is loading
- # your stats. To disable them set the value to "none"
- loading-data: "&7&oVeriler yükleniyor..."
- stats-loaded: "&7İstatistiklerin yüklendi."
- 
+  # Loading messages ( These messages appear when the plugin is loading
+  # your stats. To disable them set the value to "none"
+  loading-data: "&7&oDatalar yükleniyor..."
+  stats-loaded: "&7İstatistikler yüklendi."
+
+##############################################################################################################
+# Bounty                                                                                                     #
+##############################################################################################################
+# Bounty messages                                                                                            #
+##############################################################################################################
+bounty:
+  bounty: "Ödül"
+  someone: "Avcı"
+  created-message-list:
+  - " "
+  - " &6&lÖdül"
+  - " &f&e%target%&f adlı oyuncunun başına başarıyla ödül."
+  - " "
+  - " &fBu oyuncuyu öldüren ilk kişi &e%bounty%$&f &fpuan ödül kazanacak."
+  - " &fÖdülden &e%percentage%% (&e%tax%$&f) &fvergi alındı."
+  - " "
+  bounty-on-you-message-list:
+  - " "
+  - " &6&lÖdül"
+  - " &c%initiator% &fbaşına ödül koydu!"
+  - " &fSeni öldüren ilk kişi &e%bounty%$&f &fpuan ödül kazanacak."
+  - " "
+  bounty-broadcast-message-list:
+  - " "
+  - " &6&lÖdül duyurusu"
+  - " &e%initiator% &c%target%&f adlı oyuncunun başına ödül koydu!"
+  - " &fBu oyuncuyu öldüren ilk kişi &e%bounty%$&f &fpuan ödül kazanacak!"
+  - " "
+  bounty-claimed-broadcast: "&e%player%, &e%target% &fadlı kurbanı öldürerek ödülü kazandı! (&e$%bounty%&f)"
+  bounty-claimed: "&c%target% &eadlı kurbanı öldürerek &a$%bounty%&e &ekazandın!"
+  
+  no-bounty-on-target: "&c%target%&e &eadlı oyuncunun başında ödül yok!"
+  bounty-information-list:
+  - " "
+  - " &6&lÖdül bilgilendirmesi"
+  - " &eKurban: &f%target%"
+  - " &eÖdül: &f$%bounty%"
+  - " &eKalan süre: &f%time%"
+  - " "
+  
+  bounty-expired-broadcast: "&e%target% &füstündeki ödülün süresi doldu."
+  bounty-expired-initiator: "&e%target% &füstündeki ödülün süresi doldu. &e$%bounty% &fgeri alındı"
+  
+  accept-item: "&aOnay"
+  accept-item-lore: "&7Onaylamak için tıkla!"
+  
+  cancel-item: "&cİptal"
+  cancel-item-lore: "&7İptal etmek için tıkla!"
+  
+  anonymous-item-on: "&eHayalet: &aAçık"
+  anonymous-item-on-lore: "&7Hayalet modu açık.=&7Kimse ödül koyan kişinin sen olduğunu göremez!"
+  anonymous-item-off: "&eHayalet: &cKapalı"
+  anonymous-item-off-lore: "&7Hayalet modu kapalı.=&7Herkes ödül koyan kişinin sen olduğunu görebilir!"
+  
+  target-item: "&eHedef: &b%target%"
+  target-item-lore: "&7Hedefi seçmek için tıklayın."
+  
+  bounty-amount-item: "&eÖdül: &b$%with_tax%"
+  bounty-amount-item-lore: "=&fÖdül: &c%without_tax%=&f- Vergi (&7%tax%&f): %tax_amount%= =&7Ödülü değiltirmek için tıkla."
+  
+  type-in-targetname: "&eHedefin ismini yazın:"
+  type-in-bounty: "&eÖdül miktarını girin: &f(Min: $%min%, Max: $%max%)"
+  already-bounty-on-target: "&eBu oyuncunun başında zaten bir ödül var!"
+  cant-set-bounty-on-yourself: "&cKendi üzerine&e &eödül koyamazsın!"
+  target-not-able-to-fight: "&c%target% &eŞuan savaşamaz!"
+  setup-cancelled: "&eÖdül iptal edildi."
+
 ##############################################################################################################
 # General                                                                                                    #
 ##############################################################################################################
@@ -141,150 +212,184 @@ Points-Ranking-System:
 ############################################################################################################## 
 general:
 
- # General plugin messages
- no-permission: "&cYetkin yok!"
- help-message: "&7Bilgi için &c%cmd% help &7yaz!"
- help-list:
+  # General plugin messages
+  no-permission: "&cYetkin yok!"
+  help-message: "&7Yardım için &c/%cmd% help &eyazın!"
+  number-between: "&eLütfen &c%min% &eile %max%&e &earası bir sayı girin!"
+  not-a-number: "&c%input% &ebir sayı değil!"
+  
+  # Help list for your players
+  help-list:
   - "&4&m#&c&m---------------------------------&4&m#"
-  - ""
+  - "                  &cDeluxeCombat               "
   - " "
-  - "&8- &c/%cmd% help &8> &7Bu mesajı gösterir."
-  - "&8- &c/tag [Oyuncu] &8> &7Şuanki savaş durumunu gösterir."
-  - "&8- &c/pvpstats [Oyuncu] &8> &7PvP istatistiklerini gösterir."
-  - "&8- &c/pvpstats reset &8> &7İstatistiklerini yeniler."
-  - "&8- &c/grace &8> &7Dokunulmazlık durumunu gösterir."
-  - "&8- &c/grace disable &8> &7Dokunulmazlığını kapatır."
-  - "&8- &c/%cmd% lb (İstatistik) &8> &7İstatistik sıralamasını gösterir."
+  - "&8- &c/%cmd% help &8> &7yaz"
+  - "&8- &c/tag [Player] &8> &7Savaş durumunu gösterir"
+  - "&8- &c/pvpstats [Player] &8> &7Oyuncunun istatistiklerini sıfırlar."
+  - "&8- &c/pvpstats reset &8> &7İstatistikleri sıfırlar."
+  - "&8- &c/grace &8> &7Koruma istatiğini gösterir"
+  - "&8- &c/grace disable &8> &7Grace'yi kapar."
+  - "&8- &c/sellhead&8> &7Elindeki kafayı satar."
+  - "&8- &c/%cmd% lb (Stats) &8> &7Liderlik tablosunu gösterir."
   - " "
-  - "&8(): &cGereken&7, []: &cİsteğe bağlı"
+  - "&8(): &cRequired&7, []: &cOptional"
   - "&4&m#&c&m---------------------------------&4&m#"
   
- # Message when you land a headshot on a player
- headshot-actionbar: "&a&oTam kafadan -> %player%!"
- 
- # Messages for the damage indicator
- damage-indicator:
-  critical: "&c&lCritical Hit! &e&o(- %damage%)"
-  normal-damage: "&c&o- %damage%"
+  # Here you can configure the placeholder messages
+  placeholder-messages:
+    yes-message: "&aEvet"
+    no-message: "&cHayır"
+    question-message: "???"
+
+  # Message when you land a headshot on a player
+  headshot-actionbar: "&a&o%player%Adlı oyuncuyu kafadan vurdun!"
   
- spawnpoint-msg: "&eYou have been teleported to: %spawnpoint%"
- spawnpoint-title: "%spawnpoint%"
- spawnpoint-subtitle: "&f&oWelcome %player%!"
+  # Killer Drops
+  killer-drops-unlocked-in: "&eEşyaları alabilme süresi: &c%time%s"
   
- # Gold / God apple restrictions
- please-wait-gold-apple: "&cPlease wait &4%time% &cbefore you can use the next gold apple"
- please-wait-god-apple: "&cPlease wait &4%time% &cbefore you can use the next god apple"
+  # Ghostplayer messages
+  ghost-killed: "&c%attacker% &c%victim%&e &eadlı oyuncunun hayaletini öldürdü!"
+  ghost-name: "&6%victim% &e[&cOffline&e]"
   
- # Enderpearl / Chorusfruit / Totem of undying / Elytra restrictions
- enderpearls-block-invalid: "&cTo prevent a glitch, you cannot throw an enderpearl into this block: &4%block%"
- enderpearls-disabled: "&cEnderpearls are disabled on this server"
- chorusfruits-disabled: "&cChorusfruits are disabled on this server"
- totems-disabled: "&cTotems of undying are disabled on this server"
- elytras-disabled: "&cElytras are disabled on this server"
- elytra-has-been-dropped: "&cYour inventory is full. Your elytra has been dropped."
- please-wait-enderpearl: "&cPlease wait &4%time% &cmore seconds until you can use a endepearl again"
- please-wait-chorusfruit: "&cPlease wait &4%time% &cmore seconds until you can use a chorus fruit again"
- please-wait-totem: "&cPlease wait &4%time% &cmore seconds until you can use the next totem of undying"
- please-wait-actionbar: "&6&l%material% &r&f- (&e%time%s&f)"
+  # Messages for the damage indicator
+  damage-indicator:
+    critical: "&c&lKritik Vuruş! &e&o(- %damage%)"
+    normal-damage: "&c&o- %damage%"
   
- # Grace system
- grace-left: "&a%player% is for the next &2%time% &aprotected against all types of damage!"
- no-grace-active: "&cYou have no active protection."
- grace-disabled: "&cYou have disabled your protection. You are no longer immune against all types of damage!"
- grace-disabled-by-admin: "&c%player% disabled your protection. You are no longer immune against all types of damage!"
- player-has-grace-active: "&cYou cant fight with this player because he has an active newbie protection!"
- you-have-grace-active: "&cYou cant fight with this player because you have an active newbie protection! Wait &4%time% &cor type in &4/grace disable"
+  spawnpoint-msg: "&eIşınlayıcı: %spawnpoint%"
+  spawnpoint-title: "%spawnpoint%"
+  spawnpoint-subtitle: "&f&oHoşgeldin %player%!"
   
- # Anti Kill Abuse
- anti-kill-abuse: "&cYou killed %victim% %amount% times! You can kill him again in &4%time%!"
- reached-kill-max: "&cYou reached the max. amount (%amount%) of kills with %victim%! You now cant kill him for: &4%time%"
- 
- # Combat messages
- flying-not-allowed-during-combat: "&cFlying is not allowed during combat!"
- potion-disabled: "&cThis potion is disabled on the server!"
- player-not-online: "&cThis player is not online!"
- player-not-in-combat: "&a%player% &7is not in combat mode!"
- player-in-combat: "&c%player% &7is in combat mode!"
- still-in-combat: "&eYou are still in &ccombat&e! Do not leave!"
- not-in-combat: "&aYou are not in combat! You can leave the server!"
- deny-gamemode: "&cYou cant hit other players while you are in creative gamemode!"
+  # Gold / God apple restrictions
+  please-wait-gold-apple: "&cTekrar altın elma yiyebilmek için &4%time% &cbekle"
+  please-wait-god-apple: "&cTekrar Büyülü elma yiyebilmek için &4%time% &cbekle"
   
- # Vault messages
- vault-add-money-kill: "&7You gained &a%amount% %currency% &7for killing &c%victim%"
- vault-remove-money-death: "&7You lost &c%amount% %currency% &7for dying"
- vault-remove-money-lost-head: "&7You lost &c%amount% %currency% &7because you lost your head during a fight!"
+  # Enderpearl / Chorusfruit / Totem of undying / Elytra restrictions
+  enderpearls-block-invalid: "&cGlitch önleyici: &4%block%"
+  enderpearls-not-enough-space: "&cGlitch önleyici."
+  enderpearls-disabled: "&cBu sunucuda enderpearl kullanımı yasak."
+  chorusfruits-disabled: "&cNakarat Bitkisi bu sunucuda yasak."
+  totems-disabled: "&cÖlümsüzlük totemi bu sunucuda yasak."
+  elytras-disabled: "&cKanat bu sunucuda yasak."
+  elytra-has-been-dropped: "&cEnvanterin dolu, Kanat düştü."
+  please-wait-enderpearl: "&cTekrar Enderpearl kullanmak için &4%time% &csaniye bekleyin."
+  please-wait-chorusfruit: "&cNakarat bitkisini tekrar kullanmak için &4%time% &csaniye bekleyin."
+  please-wait-totem: "&c Ölümsüzlük Totemini tekrar kullanmak için &4%time% &csaniye bekleyin."
+  please-wait-actionbar: "&6&l%material% &r&f- (&e%time%s&f)"
   
- # Sellhead messages
- sellhead-successfully-redeemed: "&eYou successfully redeemed the dismembered head of &6%player%&e. You received &a%amount% %currency%&e."
- sellhead-already-redeemed: "&eYou &calready &eredeemed this head."
- sellhead-unknown-head: "&eThis head got already redeemed or is invalid."
- sellhead-displayname: "&eDismembered head of: &c%victim%"
- sellhead-lore: "&fWorth: &e%amount% %currency%=&f&oCan be sold with /sellhead"
+  # Grace system
+  grace-left: "&a%player% is for the next &2%time% &aprotected against all types of damage!"
+  no-grace-active: "&cYou have no active protection."
+  grace-disabled: "&cYou have disabled your protection. You are no longer immune against all types of damage!"
+  grace-disabled-by-admin: "&c%player% disabled your protection. You are no longer immune against all types of damage!"
+  player-has-grace-active: "&cYou cant fight with this player because he has an active newbie protection!"
+  you-have-grace-active: "&cYou cant fight with this player because you have an active newbie protection! Wait &4%time% &cor type in &4/grace disable"
   
- # Healthbar messages
- healthbar-bossbar-message: "&cHealth of %player% &e(&c%health% ❤&e)"
+  # Anti Kill Abuse
+  anti-kill-abuse: "&c%victim% Adlı oyuncuyu %amount% kez öldürdün! &cOnu tekrar &4%time% &ciçinde öldürebilirsin!"
+  reached-kill-max: "&c%victim% Adlı oyuncuyu MAKSIMUM ödlürmeye ulaştın (%amount%) &cOnu tekrar &4%time% &ciçinde öldürebilirsin!"
   
- # Deathback messages
- cannot-teleport-to-death-location: "&cYour death location got deleted or you dont have one!"
- teleported-to-death-location: "&aYou have been teleported to your latest death location."
+  # Combat messages
+  flying-not-allowed-during-combat: "&cSavaş sırasında uçamazsın!"
+  potion-disabled: "&cBu iksirin kullanımı sunucuda yasak!"
+  player-not-online: "&cBu oyuncu çevrimiçi değil!"
+  player-not-in-combat: "&a%player% &7Savaşta değil!"
+  player-in-combat: "&c%player% &7Savaşta!"
+  still-in-combat: "&eHalen &csavaştasın&e!"
+  not-in-combat: "&aSavaş sona erdi!"
+  deny-gamemode: "&cYaratıcılık modunda iken oyunculara vuramazsınız!"
   
- # PVP Toggle Command messages
- pvp-toggle-cmd-has-been-disabled: "&cYou cant use this command because it got disabled by a server admin!"
- pvp-toggle-enabled: "&eYou have &aenabled &eyour pvp. You can now &afight &eother players!"
- pvp-toggle-disabled: "&eYou have &cdisabled &eyour pvp. You can no longer &cfight &eother players!"
- pvp-still-disabled: "&eYou pvp is &cdisabled&e! Enabled it again with &c/togglepvp"
- player-has-pvp-disabled: "&eYou &ccannot &efight this player, because he has pvp disabled!"
+  # Vault messages
+  vault-add-money-kill: "&c%victim% Adlı oyuncuyu öldürerek &a%amount% %currency% &7kazandın."
+  vault-remove-money-death: "&7Öldüğün için &c%amount% %currency% &7Kaybettin."
+  vault-remove-money-lost-head: "&7Kafanı kaybettiğin için &c%amount% %currency% &7kaybettin!"
+  vault-not-enough-money: "&cYeterli paran yok! (&4%amount%&c)"
   
- # Time formatting
- time:
-   hours: "hours"
-   hour: "hour"
-   minutes: "minutes"
-   minute: "minute"
-   seconds: "seconds"
-   second: "second"
+  # Sellhead messages
+  sellhead-successfully-redeemed: "&eKafayı bozdurdun &6%player%&e. &a%amount% %currency%&e &ekazandın."
+  sellhead-already-redeemed: "&eBu kafayı çoktan kullandın."
+  sellhead-unknown-head: "&eBu kafa çoktan bozdurulmuş ya da geçersiz."
+  sellhead-displayname: "&e&c%victim% adlı oyuncunun kopmuş kafası."
+  sellhead-lore: "&fDeğer: &e%amount% %currency%=&f&o /sellhead &eile satılabilir."
   
- please-wait-before: "&cPlease wait &4%time% &cbefore you can do that again!"
+  # Healthbar messages
+  healthbar-bossbar-message: "&c%player% Adlı oyuncunun canı &e(&c%health% ❤&e)"
   
+  # Deathback messages
+  cannot-teleport-to-death-location: "&cÖlüm yerin silindi!"
+  teleported-to-death-location: "&aEn son öldüğün yere ışınlandın."
+  
+  # PVP Toggle Command messages
+  pvp-toggle-cmd-has-been-disabled: "&cBu komutu kullanamazsın!"
+  pvp-toggle-enabled: "&ePvP'yi açtın ettin!"
+  pvp-toggle-disabled: "&ePvP'yi kapattın!"
+  pvp-still-disabled: "&ePvP'yi kapattın &c/togglepvp &eile tekrar açabilirsin."
+  player-has-pvp-disabled: "&eBu oyuncunun PvP'si kapalı!"
+  pvp-toggle-cmd-disabled-in-this-world: "&cBu dünyada bu komutu kullanamazsın!"
+  
+  # Prevent lava / fire place in the range of a player that has a protection or pvp disabled
+  lava-fire-not-allowed: "&eYou cannot place &c%type% &enear this player because he has a protection or pvp disabled."
+  fire: "fire"
+  lava: "lava"
+  
+  # Time formatting
+  time:
+    hours: "Saat"
+    hour: "Saat"
+    minutes: "Dakika"
+    minute: "Dakika"
+    seconds: "Saniye"
+    second: "Saniye"
+  
+  please-wait-before: "&cBunu tekrar yapabilmek için &4%time% bekle!" 
+    
   # All messages from the kill recap system
   # !!! Use '=' to seperate lore lines !!!
- kill-recap:
+  kill-recap:
   
-   # Message broadcasted in the chat
-   click-to-view-recap: "&7Click to view the &e&lRECAP &r&7of this fight!"
+    # Message broadcasted in the chat
+    click-to-view-recap: "&7Savaşın özeti için tıklayın!"
     
-   inv-name: "&4Kill Recap"
+    inv-name: "&4Savaş Özeti"
     
-   close: "&c&lClose"
-   close-lore: "&7Click to close=&7the kill recap"
-   
-   exit: "&c&lÇıkış"
-   exit-lore: "&7Menüden çıkmak için tıkla"
-   
-   back: "&e&lGeri"
-   back-lore: "&7Geri gitmek için tıkla"
-   
-   list-recap: "&6%killer% &b&lvs &r&c%victim%"
-   list-recap-lore: "&7Savaştın detaylarını gör. Tarihi: &c%date%"
+    close: "&c&lKapat"
+    close-lore: "&7Savaş özetini kapatmak için tıklayın"
     
-   victim: "&cKurban: %4%victim%"
-   victim-lore: "&6%killer% &7tarafından öldürüldü."
+    exit: "&c&lÇık"
+    exit-lore: "&7Savaş özetinden çıkmak için tıklayın"
     
-   killer-weapon: "&c&lSilah: &r%item_name%"
-   killer-weapon-lore: "&7Bu eşyayı kullanarak"
+    back: "&e&lGeri"
+    back-lore: "&7Geri gelmek için tıklayın"
     
-   damage-dealt: "&cHasar verildi."
-   damage-dealt-lore: "&7Kurbanın verdiği hasar: &c%damage_dealt%"
-   damage-taken: "&eAlınan hasar"
-   damage-taken-lore: "&7Kurbanın aldığı hasar: &c%damage_taken%"
+    list-recap: "&6%killer% &b&lvs. &r&c%victim%"
+    list-recap-lore: "&7Savaş bilgileri=&7Tarih: %date%"
     
-   killer: "&eKatil: &6%killer%"
-   killer-lore: "&7Bu oyuncu &c%victim% adlı oyuncuyu öldürdü. &eAlınan hasar: &c%damage_taken% &eKalan Can: &d%hearts_left% &eVerilen Hasar: &c%damage dealt%"
+    victim: "&cKurban: &4%victim%"
+    victim-lore: "&7&6%killer% &7tarafından öldürüldünüz."
     
-   potioneffects: "&dİksir Efektleri"
-   potioneffects-lore: "&7Kurban şu iksirlerle hasar aldı: &%potioneffects%"
-   potioneffect-lore: "&e- &5%potiontype%"
-   
-   assistants: "&bYardım edenler"
-   assistants-lore: "&7Bu oyuncular katile yardım etti &7:&c %assistants%"
-   assistant-lore: "&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%"
+    killer-weapon: "&c&lSilah: &r%item_name%"
+    killer-weapon-lore: "&7Kullanılan silah"
+    
+    damage-dealt: "&cVerilen hasar"
+    damage-dealt-lore: "&7Verilen hasar: &c%damage_dealt%"
+    
+    damage-taken: "&eAlınan hasar"
+    damage-taken-lore: "&7Alınan hasar: &c%damage_taken%"
+    
+    killer: "&eKatil: &6%killer%"
+    killer-lore: "&7&c%victim% &eadlı oyuncuyu öldürdün Alınan hasar: &c%damage_taken%=&eKalan can: &d%hearts_left%=&eVerilen hasar: &c%damage_dealt%"
+    
+    potioneffects: "&dİksir etkileri"
+    potioneffects-lore: "&7Düşmana %potioneffects% ile zarar verildi"
+    potioneffect-lore: "&e- &5%potiontype%"
+    
+    assistants: "&bAsist"
+    assistants-lore: "&7Asist yapan oyuncular=&7Katil: %assistants%"
+    assistant-lore: "&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%"
+    
+    fists: "fists"
+    
+##############################################################################################################
+# Have fun with DeluxeCombat on your server, you reached the end.                                            #
+# Love the resource? Consider to review it on the resource thread.                                           #
+##############################################################################################################
