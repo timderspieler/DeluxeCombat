@@ -45,9 +45,11 @@ combat-logger:
  enderpearl-disabled-during-combat: "&cDu kannst keine Enderperlen während eines Kampfes verwenden!"
  chorusfruit-disabled-during-combat: "&cDu kannst keine Chorusfrucht während eines Kampfes verwenden!"
  totem-disabled-during-combat: "&cDu kannst kein Totem der Unsterblichkeit während eines Kampfes verwenden!"
+ elytra-disabled-during-combat: "&cDu kannst keine Elytra während eines Kampfes verwenden!"
  deny-pvp-deny-enter: "&cDu kannst diese Region nicht während eines Kampfes betreten!"
  display-time-bossbar: "&e&o%time%s &r&c&lKampf Modus &r&e&o%time%s"
  display-time-actionbar: "%progressbar% &r&e- &c%time%s"
+ player-is-already-fighting: "&c%victim% &eist bereits am kämpfen! Du kannst ihn gerade nicht angreifen."
  
 # DEATH-SIGN
 death-sign:
@@ -135,7 +137,75 @@ Points-Ranking-System:
  # your stats. To disable them set the value to "none"
  loading-data: "&7&oLade Daten..."
  stats-loaded: "&7Deine Statistik wurde geladen."
- 
+
+##############################################################################################################
+# Bounty                                                                                                     #
+##############################################################################################################
+# Bounty messages                                                                                            #
+##############################################################################################################
+bounty:
+  bounty: "Kopfgeld"
+  someone: "Jemand"
+  created-message-list:
+  - " "
+  - " &6&lKopfgeld"
+  - " &fDu hast erfolgreich ein Kopfgeld auf &e%target%&f gesetzt."
+  - " "
+  - " &fDer Erste, der &e%target% &ftötet bekommt &e%bounty%$&f."
+  - " &e%percentage%% &fdes Kopfgeldes (&e%tax%$&f) wurden"
+  - " &fals Steuer vom Server eingezogen."
+  - " "
+  bounty-on-you-message-list:
+  - " "
+  - " &6&lKopfgeld"
+  - " &c%initiator% &fhat ein Kopfgeld auf dich gesetzt!"
+  - " &fDer Erste, der dich tötet bekommt &e%bounty%$&f!"
+  - " "
+  bounty-broadcast-message-list:
+  - " "
+  - " &6&lKopfgeld Rundruf"
+  - " &e%initiator% &fhat ein Kopfgeld auf &c%target%&f gesetzt!"
+  - " &fDer Erste, der &c%target% &ftötet bekommt &e%bounty%$&f!"
+  - " "
+  bounty-claimed-broadcast: "&e%player% &fhat sich das Kopfgeld auf &e%target% &fgeschnappt! (&e$%bounty%&f)"
+  bounty-claimed: "&eDu hast dir das Kopfgeld von &c%target%'s &egeschnappt! Du bekommst &a$%bounty%&e!"
+  
+  no-bounty-on-target: "&eEs wurde kein Kopfgeld auf &c%target%&e ausgesetzt!"
+  bounty-information-list:
+  - " "
+  - " &6&lKopfgeld Information"
+  - " &eKopfgeld auf: &f%target%"
+  - " &eKopfgeld: &f$%bounty%"
+  - " &eZeit verbleibend: &f%time%"
+  - " "
+  
+  bounty-expired-broadcast: "&fDas Kopfgeld auf &e%target% &fist abgelaufen."
+  bounty-expired-initiator: "&fDein Kopfgeld auf &e%target% &fist abgelaufen. Du hast &e$%bounty% &fzurück bekommen."
+  
+  accept-item: "&aAkzeptieren"
+  accept-item-lore: "&7Klicke um das Kopfgeld zu setzen"
+  
+  cancel-item: "&cAbbrechen"
+  cancel-item-lore: "&7Klicke um das Kopfgeld abzubrechen"
+  
+  anonymous-item-on: "&eAnonym: &aAn"
+  anonymous-item-on-lore: "&7Dieses Kopfgeld wird anonym gesetzt.=&7Das bedeutet das niemand sieht,=&7dass du der Auftraggeber bist!"
+  anonymous-item-off: "&eAnonym: &cAus"
+  anonymous-item-off-lore: "&7Das Kopfgeld wird öffentlich gesetzt.=&7Das bedeutet das jeder sieht,=&7dass du der Auftraggeber bist!"
+  
+  target-item: "&eZiel: &b%target%"
+  target-item-lore: "&7Klicke um das Ziel zu ändern"
+  
+  bounty-amount-item: "&eKopfgeld: &b$%with_tax%"
+  bounty-amount-item-lore: "=&fursprüngliches Kopfgeld: &c%without_tax%=&f- Steuer (&7%tax%&f): %tax_amount%= =&7Klicke um das Kopfgeld zu ändern."
+  
+  type-in-targetname: "&eBitte gib den Namen des Zieles ein:"
+  type-in-bounty: "&eBitte gib ein Kopfgeld ein: &f(Min: $%min%, Max: $%max%)"
+  already-bounty-on-target: "&eEs wurde bereits ein Kopfgeld auf das Ziel ausgesetzt!"
+  cant-set-bounty-on-yourself: "&eDu kannst kein Kopfgeld auf &c&ldich &r&eselbst aussetzen&e!"
+  target-not-able-to-fight: "&c%target% &ekann gerade nicht kämpfen! Daher kannst du kein Kopfgeld auf ihn setzen!"
+  setup-cancelled: "&eKopfgeld abgebrochen."
+
 ##############################################################################################################
 # General                                                                                                    #
 ##############################################################################################################
@@ -143,125 +213,184 @@ Points-Ranking-System:
 ############################################################################################################## 
 general:
 
- # General plugin messages
- no-permission: "&cDas darfst du nicht!"
- help-message: "&7Nutze &c/%cmd% help &7für Hilfe!"
- help-list:
+  # General plugin messages
+  no-permission: "&cDas darfst du nicht!"
+  help-message: "&7Gib &c/%cmd% help &7für Hilfe ein!"
+  number-between: "&eBitte wähle eine Zahl zwischen &c%min% &eund %max%&e!"
+  not-a-number: "&c%input% &eist keine Zahl!"
+  
+  # Help list for your players
+  help-list:
   - "&4&m#&c&m---------------------------------&4&m#"
   - "                  &cDeluxeCombat               "
-  - ""
+  - " "
   - "&8- &c/%cmd% help &8> &7Zeigt diese Nachricht"
-  - "&8- &c/tag [Spieler] &8> &7Zeigt deinen Kampf Status"
-  - "&8- &c/pvpstats [Spieler] &8> &7Zeigt deine PVP Statistik"
-  - "&8- &c/pvpstats reset &8> &7Setzt deine Statistik zurück"
+  - "&8- &c/tag [Player] &8> &7Zeigt deinen Kampf Status"
+  - "&8- &c/pvpstats [Player] &8> &7Zeigt deine Statistik"
+  - "&8- &c/pvpstats reset &8> &7Resette deine Statistik"
   - "&8- &c/grace &8> &7Zeigt deinen Schutz Status"
   - "&8- &c/grace disable &8> &7Deaktiviert deinen Schutz"
+  - "&8- &c/sellhead&8> &7Verkaufe den Kopf in deiner Hand"
   - "&8- &c/%cmd% lb (Stats) &8> &7Zeigt das Leaderboard"
-  - ""
+  - " "
   - "&8(): &cBenötigt&7, []: &cOptional"
   - "&4&m#&c&m---------------------------------&4&m#"
   
- # Message when you land a headshot on a player
- headshot-actionbar: "&a&oHeadshot für %player%!"
- 
- # Gold / God apple restrictions
- please-wait-gold-apple: "&cBitte warte &4%time% &cweitere Sekunden bis du den nächsten Gold Apfel essen kannst."
- please-wait-god-apple: "&cBitte warte &4%time% &cweitere Sekunden bis du den nächsten verzauberten Gold Apfel essen kannst."
- 
- # Enderpearl / Chorusfruit / Totem of undying restrictions
- enderpearls-disabled: "&cEnderperlen sind auf diesem Server deaktiviert."
- chorusfruits-disabled: "&cChorus Früchte sind auf diesem Server deaktiviert."
- totems-disabled: "&cTotems der Unsterblichkeit sind auf diesem Server deaktiviert."
- please-wait-enderpearl: ""
- please-wait-chorusfruit: "&cBitte warte &4%time% &cweitere Sekunden bis du die nächste Enderperle werfen kannst."
- please-wait-totem: "&cBitte warte &4%time% &cweitere Sekunden bis du den nächsten Totem der Unsterblichkeit verwenden kannst."
- 
- # Grace system
- grace-left: "&a%player% ist für die nächsten &2%time% &ageschützt gegen jede Art von Schaden!"
- no-grace-active: "&cDu hast keinen aktiven Schutz."
- grace-disabled: "&cDu hast deinen Schutz deaktiviert. Du bist nun nicht länger gegen Schaden geschützt!"
- grace-disabled-by-admin: "&c%player% hat deinen Schutz deaktiviert. Du bist nicht länger gegen Schaden geschützt!"
- player-has-grace-active: "&cDu kannst nicht mit diesem Spieler kämpfen da er einen aktiven Neulingsschutz besitzt!"
- you-have-grace-active: "&cDu kannst nicht mit diesem Spieler kämpfen, da du einen aktiven Neulingsschutz besitzt. Warte &4%time% &coder nutze &4/grace disable"
- 
- # Anti Kill Abuse
- anti-kill-abuse: "&cDu hast %victim% %amount% mal getötet! Du kannst ihn für die nächsten &4%time% &cnicht mehr angreifen!"
- reached-kill-max: "&cDu hast die maximale Menge (%amount%) an Kills an %victim% erreicht. Du kannst ihn für die nächsten &4%time% &cnicht mehr angreifen!"
- 
- # Combat messages
- flying-not-allowed-during-combat: "&cDu kannst nicht während eines Kampfes fliegen!"
- potion-disabled: "&cDieser Trank ist auf diesem Server deaktiviert!"
- player-not-online: "&cDieser Spieler ist nicht online!"
- player-not-in-combat: "&a%player% &7ist nicht im Kampf Modus!"
- player-in-combat: "&c%player% &7ist im Kampf Modus!"
- still-in-combat: "&eDu bist noch in einem &cKampf&e! Verlasse nicht den Server!"
- not-in-combat: "&aDu bist nicht in einem Kampf! &eDu kannst den Server verlassen."
- deny-gamemode: "&cDu kannst andere Spieler nicht schlagen, während du im Kreativ Modus bist!"
- 
- # Vault messages
- vault-add-money-kill: "&7Du hast &a%amount% %currency% &7erhalten, da du &c%victim% &7getötet hast!"
- vault-remove-money-death: "&7Du hast &c%amount% %currency% &7verloren, da du gestorben bist!"
- vault-remove-money-lost-head: "&7Du hast &c%amount% %currency% &7verloren, da du während eines Kampfes deinen Kopf verloren hast!"
- 
- # Healthbar messages
- healthbar-bossbar-message: "&c%player%'s Leben &e(&c%health% ❤&e)"
- 
- # Deathback messages
- cannot-teleport-to-death-location: "&cDein letzter Todesstandort wurde gelöscht, oder du hast keinen!"
- teleported-to-death-location: "&aDu wurdest zu deinem letzten Todesstandort teleportiert!"
- 
- # PVP Toggle Command messages
- pvp-toggle-cmd-has-been-disabled: "&cDu kannst diesen Befehl nicht benutzen, da er deaktiviert wurde!"
- pvp-toggle-enabled: "&eDu hast PvP für dich &aaktiviert&e. Du kannst nun gegen andere Spieler &akämpfen&e!"
- pvp-toggle-disabled: "&eDu hast PvP für dich &cdeaktiviert&e. Du kannst nun nicht mehr gegen andere Spieler &ckämpfen&e!"
- pvp-still-disabled: "&eDu hast dein PvP &cdeaktiviert&e! Aktiviere es erneut mit &c/togglepvp"
- player-has-pvp-disabled: "&eDu kannst mit diesem Spieler nicht kämpfen, da er für sich PvP deaktiviert hat!"
- 
- # Sellhead messages
- sellhead-successfully-redeemed: "&eDu hast erfolgreich den abgetrennten Kopf von &6%player%&e eingelöst. Du hast &a%amount% %currency%&e erhalten."
- sellhead-already-redeemed: "&eDu hast diesem Kopf &cbereits &eeingelöst."
- sellhead-unknown-head: "&eDieser Kopf ist ungültig oder wurde bereits eingelöst."
+  # Here you can configure the placeholder messages
+  placeholder-messages:
+    yes-message: "&aJa"
+    no-message: "&cNein"
+    question-message: "???"
+
+  # Message when you land a headshot on a player
+  headshot-actionbar: "&a&oKopfschuss für %player%!"
   
- # Time formatting
- time:
-  hours: "Stunden"
-  hour: "Stunde"
-  minutes: "Minuten"
-  minute: "Minute"
-  seconds: "Sekunden"
-  second: "Sekunde"
+  # Killer Drops
+  killer-drops-unlocked-in: "&eDrops werden in &c%time%s &r&eentsperrt"
+  victim-drops-unlocked-notification: "&eDeine Items wurden entsperrt. Du kannst sie nun bei &c%x%&e, &c%y%&e, &c%z% &eaufheben."
   
- please-wait-before: "&cBitte warte &4%time% &cbevor du das erneut tun kannst!" 
+  # Ghostplayer messages
+  ghost-killed: "&c%attacker% &ehat den Geist von &c%victim%&e getötet!"
+  ghost-name: "&6%victim% &e[&cOffline&e]"
   
- # All messages from the kill recap system
- # !!! Use '=' to seperate lore lines !!!
- kill-recap:
+  # Messages for the damage indicator
+  damage-indicator:
+    critical: "&c&lKritischer Treffer! &e&o(- %damage%)"
+    normal-damage: "&c&o- %damage%"
+  
+  spawnpoint-msg: "&eDu hast dich zu: %spawnpoint%&r &eteleportiert."
+  spawnpoint-title: "%spawnpoint%"
+  spawnpoint-subtitle: "&f&oWillkommen %player%!"
+  
+  # Gold / God apple restrictions
+  please-wait-gold-apple: "&cBitte warte &4%time% &cweitere Sekunden bis du den nächsten Gold Apfel essen kannst."
+  please-wait-god-apple: "&cBitte warte &4%time% &cweitere Sekunden bis du den nächsten verzauberten Gold Apfel essen kannst."
+  
+  # Enderpearl / Chorusfruit / Totem of undying / Elytra restrictions
+  enderpearls-block-invalid: "&cUm einen Bug zu verhindern kannst du dich nicht in diesen Block teleportieren: &4%block%"
+  enderpearls-not-enough-space: "&cEs ist nicht genügend Platz zwischen den zwei Blöcken, zu denen du dich teleportieren möchtest!"
+  enderpearls-disabled: "&cEnderperlen sind auf diesem Server deaktiviert"
+  chorusfruits-disabled: "&cChorus Früchte sind auf diesem Server deaktiviert"
+  totems-disabled: "&cTotems der Unsterblichkeit sind auf diesem Server deaktiviert"
+  elytras-disabled: "&cElytren sind auf diesem Server deaktiviert"
+  elytra-has-been-dropped: "&cDein Inventar ist voll. Deine Elytra wurde fallen gelassen"
+  please-wait-enderpearl: "&cBitte warte &4%time% &cbevor du die nächste Enderperle benutzen kannst."
+  please-wait-chorusfruit: "&cBitte warte &4%time% &cbevor du die nächste Chorus Frucht benutzen kannst."
+  please-wait-totem: "&cBitte warte &4%time% &cbevor du den nächsten Totem der Unsterblichkeit benutzen kannst."
+  please-wait-actionbar: "&6&l%material% &r&f- (&e%time%s&f)"
+  
+  # Grace system
+  grace-left: "&a%player% ist für die nächsten &2%time% &ageschützt gegen jede Art von Schaden!"
+  no-grace-active: "&cDu hast keinen aktiven Schutz."
+  grace-disabled: "&cDu hast deinen Schutz deaktiviert. Du bist nun nicht länger gegen Schaden geschützt!"
+  grace-disabled-by-admin: "&c%player% hat deinen Schutz deaktiviert. Du bist nicht länger gegen Schaden geschützt!"
+  player-has-grace-active: "&cDu kannst nicht mit diesem Spieler kämpfen da er einen aktiven Neulingsschutz besitzt!"
+  you-have-grace-active: "&cDu kannst nicht mit diesem Spieler kämpfen, da du einen aktiven Neulingsschutz besitzt. Warte &4%time% &coder nutze &4/grace disable"
+  
+  # Anti Kill Abuse
+  anti-kill-abuse: "&cYou killed %victim% %amount% times! You can kill him again in &4%time%!"
+  reached-kill-max: "&cYou reached the max. amount (%amount%) of kills with %victim%! You now cant kill him for: &4%time%"
+  
+  # Combat messages
+  flying-not-allowed-during-combat: "&cDu kannst nicht während eines Kampfes fliegen!"
+  potion-disabled: "&cDieser Trank ist auf diesem Server deaktiviert!"
+  player-not-online: "&cDieser Spieler ist nicht online!"
+  player-not-in-combat: "&a%player% &7ist nicht im Kampf Modus!"
+  player-in-combat: "&c%player% &7ist im Kampf Modus!"
+  still-in-combat: "&eDu bist noch in einem &cKampf&e! Verlasse nicht den Server!"
+  not-in-combat: "&aDu bist nicht in einem Kampf! &eDu kannst den Server verlassen."
+  deny-gamemode: "&cDu kannst andere Spieler nicht schlagen, während du im Kreativ Modus bist!"
+  
+  # Vault messages
+  vault-add-money-kill: "&7Du hast &a%amount% %currency% &7erhalten, da du &c%victim% &7getötet hast!"
+  vault-remove-money-death: "&7Du hast &c%amount% %currency% &7verloren, da du gestorben bist!"
+  vault-remove-money-lost-head: "&7Du hast &c%amount% %currency% &7verloren, da du während eines Kampfes deinen Kopf verloren hast!"
+  vault-not-enough-money: "&cDu hast nicht genügend Geld! (&4%amount%&c)"
+  
+  # Sellhead messages
+  sellhead-successfully-redeemed: "&eDu hast erfolgreich den abgetrennten Kopf von &6%player%&e eingelöst. Du bekommst &a%amount% %currency%&e."
+  sellhead-already-redeemed: "&eDu hast diesen Kopf bereits eingelöst."
+  sellhead-unknown-head: "&eDu hast diesen Kopf bereits eingelöst, oder er ist nicht gültig"
+  sellhead-displayname: "&eAbgetrennter Kopf von: &c%victim%"
+  sellhead-lore: "&fWert: &e%amount% %currency%=&f&oKann mit /sellhead verkauft werden"
+  
+  # Healthbar messages
+  healthbar-bossbar-message: "&cLeben von %player% &e(&c%health% ❤&e)"
+  
+  # Deathback messages
+  cannot-teleport-to-death-location: "&cDein letzter Todesstandort wurde gelöscht, oder du hast keinen!"
+  teleported-to-death-location: "&aDu wurdest zu deinem letzten Todesstandort teleportiert!"
+  
+  # PVP Toggle Command messages
+  pvp-toggle-cmd-has-been-disabled: "&cDu kannst diesen Befehl nicht benutzen, da er deaktiviert wurde!"
+  pvp-toggle-enabled: "&eDu hast PvP für dich &aaktiviert&e. Du kannst nun gegen andere Spieler &akämpfen&e!"
+  pvp-toggle-disabled: "&eDu hast PvP für dich &cdeaktiviert&e. Du kannst nun nicht mehr gegen andere Spieler &ckämpfen&e!"
+  pvp-still-disabled: "&eDu hast dein PvP &cdeaktiviert&e! Aktiviere es erneut mit &c/togglepvp"
+  player-has-pvp-disabled: "&eDu kannst mit diesem Spieler nicht kämpfen, da er für sich PvP deaktiviert hat!"
+  pvp-toggle-cmd-disabled-in-this-world: "&cDu kannst diesen Befehl nicht in dieser Welt verwenden"
+  
+  # Prevent lava / fire place in the range of a player that has a protection or pvp disabled
+  lava-fire-not-allowed: "&eYou cannot place &c%type% &enear this player because he has a protection or pvp disabled."
+  fire: "Feuer"
+  lava: "Lava"
+  
+  # Time formatting
+  time:
+    hours: "Stunden"
+    hour: "Stunde"
+    minutes: "Minuten"
+    minute: "Minute"
+    seconds: "Sekunden"
+    second: "Sekunde"
+  
+  please-wait-before: "&cBitte warte &4%time% &cbevor du das erneut tun kannst!"  
+    
+  # All messages from the kill recap system
+  # !!! Use '=' to seperate lore lines !!!
+  kill-recap:
  
-  # Message broadcasted in the chat
-  click-to-view-recap: "&7Klicke &e&lHIER &r&7um dir die Statistik des Kampfes anzusehen!"
+   # Message broadcasted in the chat
+   click-to-view-recap: "&7Klicke &e&lHIER &r&7um dir die Statistik des Kampfes anzusehen!"
   
-  inv-name: "&4Kampf Statistik"
-  close: "&c&lSchließen"
-  close-lore: "&7Klicke um die Kampf=&7Statistik zu schließen"
-  exit: "&c&lVerlassen"
-  exit-lore: "&7Klicke um das=&7Statistik Menü zu=&7schließen"
-  back: "&e&lZurück"
-  back-lore: "&7Klicke um zurück=&7zu kehren"
-  list-recap: "&6%killer% &b&lgegen &r&c%victim%"
-  list-recap-lore: "&7Sieh dir die Statistik des Kampfes an=&7Datum: %date%"
-  victim: "&cOpfer: &4%victim%"
-  victim-lore: "&7Getötet durch &6%killer%"
-  killer-weapon: "&c&lWaffe: &r%item_name%"
-  killer-weapon-lore: "&7Benutzte Waffe"
-  damage-dealt: "&cSchaden verteilt"
-  damage-dealt-lore: "&7Der Schaden, den das Opfer=&7während des Kampfes=&7ausgeteilt hat= =&eSchaden ausgeteilt: &c%damage_dealt%"
-  damage-taken: "&eSchaden genommen"
-  damage-taken-lore: "&7Der Schaden, den das Opfer=&7während des Kampfes=&7genommen hat= =&eSchaden genommen: &c%damage_taken%"
-  killer: "&eKiller: &6%killer%"
-  killer-lore: "&7Dieser Spieler hat &c%victim% &7getötet= =&eSchaden genommen: &c%damage_taken%=&eHerzen übrig: &d%hearts_left%=&eSchaden ausgeteilt: &c%damage_dealt%"
-  potioneffects: "&dTrank Effekte"
-  potioneffects-lore: "&7Das Opfer hat durch dise=&7Trank Effekte Schaden=&7genommen: %potioneffects%"
-  potioneffect-lore: "&e- &5%potiontype%"
-  assistants: "&bAssistenten"
-  assistants-lore: "&7Diese Spieler haben den=&7Killer assistiert: %assistants%"
-  assistant-lore: "&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%"
+   inv-name: "&4Kampf Statistik"
+  
+   close: "&c&lSchließen"
+   close-lore: "&7Klicke um die Kampf=&7Statistik zu schließen"
+  
+   exit: "&c&lVerlassen"
+   exit-lore: "&7Klicke um das=&7Statistik Menü zu=&7schließen"
+  
+   back: "&e&lZurück"
+   back-lore: "&7Klicke um zurück=&7zu kehren"
+  
+   list-recap: "&6%killer% &b&lgegen &r&c%victim%"
+   list-recap-lore: "&7Sieh dir die Statistik des Kampfes an=&7Datum: %date%"
+  
+   victim: "&cOpfer: &4%victim%"
+   victim-lore: "&7Getötet durch &6%killer%"
+  
+   killer-weapon: "&c&lWaffe: &r%item_name%"
+   killer-weapon-lore: "&7Benutzte Waffe"
+  
+   damage-dealt: "&cSchaden verteilt"
+   damage-dealt-lore: "&7Der Schaden, den das Opfer=&7während des Kampfes=&7ausgeteilt hat= =&eSchaden ausgeteilt: &c%damage_dealt%"
+   damage-taken: "&eSchaden genommen"
+   damage-taken-lore: "&7Der Schaden, den das Opfer=&7während des Kampfes=&7genommen hat= =&eSchaden genommen: &c%damage_taken%"
+  
+   killer: "&eKiller: &6%killer%"
+   killer-lore: "&7Dieser Spieler hat &c%victim% &7getötet= =&eSchaden genommen: &c%damage_taken%=&eHerzen übrig: &d%hearts_left%=&eSchaden ausgeteilt: &c%damage_dealt%"
+  
+   potioneffects: "&dTrank Effekte"
+   potioneffects-lore: "&7Das Opfer hat durch dise=&7Trank Effekte Schaden=&7genommen: %potioneffects%"
+   potioneffect-lore: "&e- &5%potiontype%"
+   
+   assistants: "&bAssistenten"
+   assistants-lore: "&7Diese Spieler haben den=&7Killer assistiert: %assistants%"
+   assistant-lore: "&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%"
+    
+   fists: "Fäuste"
+    
+##############################################################################################################
+# Have fun with DeluxeCombat on your server, you reached the end.                                            #
+# Love the resource? Consider to review it on the resource thread.                                           #
+##############################################################################################################
