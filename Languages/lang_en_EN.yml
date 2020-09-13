@@ -246,6 +246,7 @@ general:
   
   # Killer Drops
   killer-drops-unlocked-in: "&eDrops unlock in: &c%time%s"
+  victim-drops-unlocked-notification: "&eYour drops are now unlocked. You can pick them up again at &c%x%&e, &c%y%&e, &c%z%"
   
   # Ghostplayer messages
   ghost-killed: "&c%attacker% &ehas killed the ghost of &c%victim%&e!"
