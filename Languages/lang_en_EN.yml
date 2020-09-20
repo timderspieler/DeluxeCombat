@@ -246,6 +246,8 @@ general:
   
   # Killer Drops
   killer-drops-unlocked-in: "&eDrops unlock in: &c%time%s"
+  killer-drops-are-locked-next: "&eYour loot is protected for the next &a%time%s&e!"
+  killer-drops-are-unlocked: "&eYour loot is no longer protected and can now be picked up by everyone!"
   victim-drops-unlocked-notification: "&eYour drops are now unlocked. You can pick them up again at &c%x%&e, &c%y%&e, &c%z%"
   
   # Ghostplayer messages
