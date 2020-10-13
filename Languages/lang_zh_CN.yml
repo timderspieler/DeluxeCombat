@@ -7,260 +7,264 @@
 # | |/ /  __/ | |_| |>  <  __/ \__/\ (_) | | | | | | |_) | (_| | |_                                          #
 # |___/ \___|_|\__,_/_/\_\___|\____/\___/|_| |_| |_|_.__/ \__,_|\__|                                         #
 combat-logger:
-  potion-disabled-during-combat: '&c您无法在作战中使用该药水!'
-  damage-to-enemy: '&e您陷入与 &6%victim% 的 &c作战 &e请不要退出游戏。'
-  damage-from-enemy: '&6%damager% &e正在攻击您，&e您陷入了 &c作战状态 &e请不要退出游戏 。'
-  disabled-command: '&e当您处于作战状态时，您不能执行指令 &c%command% 。'
-  leave-broadcast: '&c%player% 离开了游戏。当时他正与 %damager% 作战。'
-  items-broadcast: '&4%player% &c的物品处于: &4%world%&c, &4%x%, %y%, %z%'
-  combat-expired-player: '&e您对 &c%victim% &e的作战状态已过期。'
-  combat-expired: '&e您&a不再&e处于作战状态之中，现在您可以退出游戏了。'
-  enderpearl-disabled-during-combat: '&c您不能在作战过程中使用末影珍珠!'
-  chorusfruit-disabled-during-combat: '&c您不能在作战过程中食用紫荆果!'
-  totem-disabled-during-combat: '&c您不能在作战中使用不死图腾!'
-  elytra-disabled-during-combat: '&c您不能在作战过程中使用鞘翅!'
-  deny-pvp-deny-enter: '&c您无法在 PVP 关闭状态下进入该区域!'
-  display-time-bossbar: '&e&o%time%秒 &r&c&l作战模式 &r&e&o%time%秒'
-  display-time-actionbar: '%progressbar% &r&e- &c%time%秒'
-  player-is-already-fighting: '&c%victim% &e正在与另一个玩家进行战斗!
-    您目前无法袭击他。'
+  potion-disabled-during-combat: "&c您无法在作战中使用该药水!"
+  damage-to-enemy: "&e您陷入与 &6%victim% 的 &c作战 &e请不要退出游戏。"
+  damage-from-enemy: "&6%damager% &e正在攻击您，&e您陷入了 &c作战状态 &e请不要退出游戏 。"
+  disabled-command: "&e当您处于作战状态时，您不能执行指令 &c%command% 。"
+  leave-broadcast: "&c%player% 离开了游戏。当时他正与 %damager% 作战。"
+  items-broadcast: "&4%player% &c的物品处于: &4%world%&c, &4%x%, %y%, %z%"
+  combat-expired-player: "&e您对 &c%victim% &e的作战状态已过期。"
+  combat-expired: "&e您&a不再&e处于作战状态之中，现在您可以退出游戏了。"
+  enderpearl-disabled-during-combat: "&c您不能在作战过程中使用末影珍珠!"
+  chorusfruit-disabled-during-combat: "&c您不能在作战过程中食用紫荆果!"
+  totem-disabled-during-combat: "&c您不能在作战中使用不死图腾!"
+  elytra-disabled-during-combat: "&c您不能在作战过程中使用鞘翅!"
+  deny-pvp-deny-enter: "&c您无法在 PVP 关闭状态下进入该区域!"
+  display-time-bossbar: "&e&o%time%秒 &r&c&l作战模式 &r&e&o%time%秒"
+  display-time-actionbar: "%progressbar% &r&e- &c%time%秒"
+  player-is-already-fighting: "&c%victim% &e正在与另一个玩家进行战斗!
+    您目前无法袭击他。"
 death-sign:
-  line1: R.I.P
-  line2: '%player%'
-  line3: 死于
-  line4: combatlogging
+  line1: "R.I.P"
+  line2: "%player%"
+  line3: "死于"
+  line4: "combatlogging"
 death-causes:
-  void: '&c%player% &e失足落入了虚空当中'
-  void_player: '&c%player% &e被 &c%killer% 推入了虚空当中 &e(&c%hearts%&e)'
-  shoot: '&c%player% &e死于 &c%killer% &e的箭驽之下 (&c%hearts%&e)'
-  drown: '&c%player% &e在水中窒息而亡'
-  lava: '&c%player% &e在岩浆中泡了一生一次的热澡'
-  fall: '&c%player% &e并没有意识到掉落的高度足以使其致死'
-  magic: '&c%player% &e没有意识到药水对其自身的危害性'
-  magic_player: '&c%player% &e被 &c%killer% 的神秘药水致死了 &e(&c%hearts%&e)'
-  fire: '&c%player% &e尝试与火共舞，可惜火并不那么想'
-  none: '&c%player% &e出于未知的原因死了'
-  sword_kill: '&c%player% &e受到了来自 &c%killer% 的剑伤 &e(&c%hearts%&e)
-  武器名称: &c&o%item_name%'
+  void: "&c%player% &e失足落入了虚空当中"
+  void_player: "&c%player% &e被 &c%killer% 推入了虚空当中 &e(&c%hearts%&e)"
+  shoot: "&c%player% &e死于 &c%killer% &e的箭驽之下 (&c%hearts%&e)"
+  drown: "&c%player% &e在水中窒息而亡"
+  lava: "&c%player% &e在岩浆中泡了一生一次的热澡"
+  fall: "&c%player% &e并没有意识到掉落的高度足以使其致死"
+  magic: "&c%player% &e没有意识到药水对其自身的危害性"
+  magic_player: "&c%player% &e被 &c%killer% 的神秘药水致死了 &e(&c%hearts%&e)"
+  fire: "&c%player% &e尝试与火共舞，可惜火并不那么想"
+  none: "&c%player% &e出于未知的原因死了"
+  sword_kill: "&c%player% &e受到了来自 &c%killer% 的剑伤 &e(&c%hearts%&e)
+  武器名称: &c&o%item_name%"
 corpses-messages:
-- '&c&o%player% &e&o长眠于此'
-- '&c&lR.I.P %player%'
-- '%player% 在此就地火化!'
-- '&c%player% &e再也无法亲眼目睹这一切!'
+- "&c&o%player% &e&o长眠于此"
+- "&c&lR.I.P %player%"
+- "%player% 在此就地火化!"
+- "&c%player% &e再也无法亲眼目睹这一切!"
 Points-Ranking-System:
-  unknown-input-stats: '&c无法识别您的输入，请确认您使用的是以下内容: KILLS,
-    DEATHS, POINTS, COMBATLOGS'
-  not-loaded-atm: '&c这些统计数据并没有被加载，请在稍后重试!'
-  disabled: '&c排名系统已被关闭!'
-  reset: '&c您的统计数据已被清空!'
-  reset-other: '&c玩家 &4%player% &c的统计数据已被清空!'
-  add-kill: '&a&l+1 &r&7击杀'
-  add-death: '&c&l+1 &r&7死亡'
-  add-points: '&a&l+%points% &r&7恶名点'
-  remove-points: '&c&l%points% &r&7恶名点'
-  your-rank: '&7您的排名是: &a#%rank%&r&7。以恶名点数 %value% 位居'
-  players-rank: '&7玩家 %player% 的排名是: &e#%rank%&r&7。以恶名点数 %value% 位居'
-  ranking-placeholder-format: '&e%rank%. &b%player% &7- &e%amount%'
+  unknown-input-stats: "&c无法识别您的输入，请确认您使用的是以下内容: KILLS,
+    DEATHS, POINTS, COMBATLOGS"
+  not-loaded-atm: "&c这些统计数据并没有被加载，请在稍后重试!"
+  disabled: "&c排名系统已被关闭!"
+  reset: "&c您的统计数据已被清空!"
+  reset-other: "&c玩家 &4%player% &c的统计数据已被清空!"
+  add-kill: "&a&l+1 &r&7击杀"
+  add-death: "&c&l+1 &r&7死亡"
+  add-points: "&a&l+%points% &r&7恶名点"
+  remove-points: "&c&l%points% &r&7恶名点"
+  your-rank: "&7您的排名是: &a#%rank%&r&7。以恶名点数 %value% 位居"
+  players-rank: "&7玩家 %player% 的排名是: &e#%rank%&r&7。以恶名点数 %value% 位居"
+  ranking-placeholder-format: "&e%rank%. &b%player% &7- &e%amount%"
   sign-layout:
-  - '#%rank%'
-  - ' '
-  - '&o%player%'
-  - '%amount% %value%'
+  - "#%rank%"
+  - " "
+  - "&o%player%"
+  - "%amount% %value%"
   pvp-stats:
-  - '&4&m#&c&m---------------------------------&4&m#'
-  - '                  &cPvP 统计                  '
-  - '                  &e%player%                   '
-  - ' '
-  - '&8- &c击杀数: &e%kills%'
-  - '&8- &c死亡数: &e%deaths%'
-  - '&8- &cK/D: &e%kd%'
-  - '&8- &c作战日志数: &e%combatlogs%'
-  - '&8- &c恶名点: &e%points%'
-  - '&8- &c连击数: &e%streak%'
-  - '&8- &c最高连击数: &e%highest_streak%'
-  - '&8- &c排名: &e#%rank% &7(%sort%)'
-  - '&4&m#&c&m---------------------------------&4&m#'
-  loading-data: '&7&o加载数据中...'
-  stats-loaded: '&7您的统计数据已被加载。'
+  - "&4&m#&c&m---------------------------------&4&m#"
+  - "                  &cPvP 统计                  "
+  - "                  &e%player%                   "
+  - " "
+  - "&8- &c击杀数: &e%kills%"
+  - "&8- &c死亡数: &e%deaths%"
+  - "&8- &cK/D: &e%kd%"
+  - "&8- &c作战日志数: &e%combatlogs%"
+  - "&8- &c恶名点: &e%points%"
+  - "&8- &c连击数: &e%streak%"
+  - "&8- &c最高连击数: &e%highest_streak%"
+  - "&8- &c排名: &e#%rank% &7(%sort%)"
+  - "&4&m#&c&m---------------------------------&4&m#"
+  loading-data: "&7&o加载数据中..."
+  stats-loaded: "&7您的统计数据已被加载。"
 bounty:
-  bounty: Bounty
-  someone: Someone
+  bounty: "悬赏"
+  someone: "某人"
   created-message-list:
-  - ' '
-  - ' &6&l悬赏'
-  - ' &f您成功为 &e%target% &f设置了赏金。'
-  - ' '
-  - ' &f首个击杀该玩家的玩家会获得赏金 &e%bounty%$&f。'
-  - ' &e%percentage%% &f的赏金会被作为税款 (&e%tax%$&f) 将作为税款。'
-  - ' '
+  - " "
+  - " &6&l悬赏"
+  - " &f您成功为 &e%target% &f设置了赏金。"
+  - " "
+  - " &f首个击杀该玩家的玩家会获得赏金 &e%bounty%$&f。"
+  - " &e%percentage%% &f的赏金会被作为税款 (&e%tax%$&f) 将作为税款。"
+  - " "
   bounty-on-you-message-list:
-  - ' '
-  - ' &6&l悬赏'
-  - ' &c%initiator% &f正在悬赏您!'
-  - ' &f首个击杀您的玩家将获得 &e%bounty%$&f!'
-  - ' '
+  - " "
+  - " &6&l悬赏"
+  - " &c%initiator% &f正在悬赏您!"
+  - " &f首个击杀您的玩家将获得 &e%bounty%$&f!"
+  - " "
   bounty-broadcast-message-list:
-  - ' '
-  - ' &6&l悬赏布告栏'
-  - ' &e%initiator% &f正在悬赏 &c%target%&f!'
-  - ' &f首个击杀 &c%target% &f的玩家会获得 &e%bounty%$&f!'
-  - ' '
-  bounty-claimed-broadcast: '&e%player% &f领取到了 &e%target% &f的悬赏金额! (&e$%bounty%&f)'
-  bounty-claimed: '&e您成功获得了悬赏目标 &c%target% &e的赏金! 您挣到了 &a$%bounty%&e!'
-  no-bounty-on-target: '&e目前玩家 &c%target% &e身上没有悬赏!'
+  - " "
+  - " &6&l悬赏布告栏"
+  - " &e%initiator% &f正在悬赏 &c%target%&f!"
+  - " &f首个击杀 &c%target% &f的玩家会获得 &e%bounty%$&f!"
+  - " "
+  bounty-claimed-broadcast: "&e%player% &f领取到了 &e%target% &f的悬赏金额! (&e$%bounty%&f)"
+  bounty-claimed: "&e您成功获得了悬赏目标 &c%target% &e的赏金! 您挣到了 &a$%bounty%&e!"
+  no-bounty-on-target: "&e目前玩家 &c%target% &e身上没有悬赏!"
   bounty-information-list:
-  - ' '
-  - ' &6&l悬赏信息'
-  - ' &e悬赏目标: &f%target%'
-  - ' &e赏金: &f$%bounty%'
-  - ' &e剩余时间: &f%time%'
-  - ' '
-  bounty-expired-broadcast: '&f悬赏目标 &e%target% &f身上的悬赏已过期。'
-  bounty-expired-initiator: '&f您为玩家 &e%target% &f设定的悬赏已过期。 已为您退回赏金 &e$%bounty%
-    &fback.'
-  accept-item: '&a接受'
-  accept-item-lore: '&7点击以创建悬赏'
-  cancel-item: '&c取消'
-  cancel-item-lore: '&7点击以取消悬赏操作'
-  anonymous-item-on: '&e匿名悬赏: &a开启'
-  anonymous-item-on-lore: '&7这个悬赏将被设置为匿名=&7那意味着没有人可以知道=&7您是发起悬赏的人!'
-  anonymous-item-off: '&e匿名悬赏: &c关闭'
-  anonymous-item-off-lore: '&7这个悬赏将会被公示=&7这意味着所有人都能看到=&7您是发起悬赏的人!'
-  target-item: '&e悬赏目标: &b%target%'
-  target-item-lore: '&7点击以更改悬赏的目标。'
-  bounty-amount-item: '&e总赏金: &b$%with_tax%'
-  bounty-amount-item-lore: '=&原始赏金: &c%without_tax%=&f- 税款 (&7%tax%&f):
-    %tax_amount%= =&7点击以更改赏金。'
-  type-in-targetname: '&e请输入所悬赏目标的游戏名称:'
-  type-in-bounty: '&e请输入一个赏金金额: &f(最少: $%min%, 最多: $%max%)'
-  already-bounty-on-target: '&e该目标身上已经有一个活跃的悬赏令!'
-  cant-set-bounty-on-yourself: '&e您不能悬赏 &c您自己&e!'
-  target-not-able-to-fight: '&c%target% &e目前不能被攻击!'
-  setup-cancelled: '&e已取消设定悬赏的操作。'
+  - " "
+  - " &6&l悬赏信息"
+  - " &e悬赏目标: &f%target%"
+  - " &e赏金: &f$%bounty%"
+  - " &e剩余时间: &f%time%"
+  - " "
+  bounty-expired-broadcast: "&f悬赏目标 &e%target% &f身上的悬赏已过期。"
+  bounty-expired-initiator: "&f您为玩家 &e%target% &f设定的悬赏已过期。 已为您退回赏金 &e$%bounty% &f。"
+  accept-item: "&a接受"
+  accept-item-lore: "&7点击以创建悬赏"
+  cancel-item: "&c取消"
+  cancel-item-lore: "&7点击以取消悬赏操作"
+  anonymous-item-on: "&e匿名悬赏: &a开启"
+  anonymous-item-on-lore: "&7这个悬赏将被设置为匿名=&7那意味着没有人可以知道=&7您是发起悬赏的人!"
+  anonymous-item-off: "&e匿名悬赏: &c关闭"
+  anonymous-item-off-lore: "&7这个悬赏将会被公示=&7这意味着所有人都能看到=&7您是发起悬赏的人!"
+  target-item: "&e悬赏目标: &b%target%"
+  target-item-lore: "&7点击以更改悬赏的目标。"
+  bounty-amount-item: "&e总赏金: &b$%with_tax%"
+  bounty-amount-item-lore: "=&原始赏金: &c%without_tax%=&f- 税款 (&7%tax%&f):
+    %tax_amount%= =&7点击以更改赏金。"
+  type-in-targetname: "&e请输入所悬赏目标的游戏名称:"
+  type-in-bounty: "&e请输入一个赏金金额: &f(最少: $%min%, 最多: $%max%)"
+  already-bounty-on-target: "&e该目标身上已经有一个活跃的悬赏令!"
+  cant-set-bounty-on-yourself: "&e您不能悬赏 &c您自己&e!"
+  target-not-able-to-fight: "&c%target% &e目前不能被攻击!"
+  setup-cancelled: "&e已取消设定悬赏的操作。"
 general:
-  no-permission: '&c您没有足够的权限来这样做!'
-  help-message: '&7输入 &c/%cmd% help &7以获取更多信息!'
-  number-between: '&e请选择一个位于 &c%min% &e和 %max% &e之间的数字!'
-  not-a-number: '&c%input% &e不是一个数字!'
+  no-permission: "&c您没有足够的权限来这样做!"
+  help-message: "&7输入 &c/%cmd% help &7以获取更多信息!"
+  number-between: "&e请选择一个位于 &c%min% &e和 %max% &e之间的数字!"
+  not-a-number: "&c%input% &e不是一个数字!"
   help-list:
-  - '&4&m#&c&m---------------------------------&4&m#'
-  - '                  &c作战系统               '
-  - ' '
-  - '&8- &c/%cmd% help &8> &7展现更多的信息'
-  - '&8- &c/tag [Player] &8> &7展现您的作战状态'
-  - '&8- &c/pvpstats [Player] &8> &7展现您的PVP状态'
-  - '&8- &c/pvpstats reset &8> &7重置您的统计数据'
-  - '&8- &c/grace &8> &7显示您的新手保护'
-  - '&8- &c/grace disable &8> &7关闭您的新手保护'
-  - '&8- &c/sellhead&8> &7出售您手中拿着的头颅'
-  - '&8- &c/%cmd% lb (Stats) &8> &7展现统计数据排名板'
-  - ' '
-  - '&8(): &c必填项&7, []: &c选填项'
-  - '&4&m#&c&m---------------------------------&4&m#'
+  - "&4&m#&c&m---------------------------------&4&m#"
+  - "                  &c作战系统               "
+  - " "
+  - "&8- &c/%cmd% help &8> &7展现更多的信息"
+  - "&8- &c/tag [Player] &8> &7展现您的作战状态"
+  - "&8- &c/pvpstats [Player] &8> &7展现您的PVP状态"
+  - "&8- &c/pvpstats reset &8> &7重置您的统计数据"
+  - "&8- &c/grace &8> &7显示您的新手保护"
+  - "&8- &c/grace disable &8> &7关闭您的新手保护"
+  - "&8- &c/sellhead&8> &7出售您手中拿着的头颅"
+  - "&8- &c/%cmd% lb (Stats) &8> &7展现统计数据排名板"
+  - " "
+  - "&8(): &c必填项&7, []: &c选填项"
+  - "&4&m#&c&m---------------------------------&4&m#"
   placeholder-messages:
-    yes-message: '&a是'
-    no-message: '&c否'
-    question-message: ???
-  headshot-actionbar: '&a&o您击中了 %player% 的头部!'
-  killer-drops-unlocked-in: '&e掉落物被保护倒计时: &c%time%秒'
-  killer-drops-are-locked-next: '&e您的掉落物将在 &a%time%秒 &e内被保护!'
-  killer-drops-are-unlocked: '&e您的掉落物将不再被保护，现在任何人都能将它们捡起!'
-  victim-drops-unlocked-notification: '&e您所击杀玩家的掉落物已过保护时间，您可以在 &c%x%&e, &c%y%&e, &c%z% &e拾取它们'
-  ghost-killed: '&c%attacker% &e已经驱散了 &c%victim% &e的灵魂!'
-  ghost-name: '&6%victim% &e[&c离线&e]'
+    yes-message: "&a是"
+    no-message: "&c否"
+    question-message: "???"
+  headshot-actionbar: "&a&o您击中了 %player% 的头部!"
+  killer-drops-unlocked-in: "&e掉落物被保护倒计时: &c%time%秒"
+  killer-drops-are-locked-next: "&e您的掉落物将在 &a%time%秒 &e内被保护!"
+  killer-drops-are-unlocked: "&e您的掉落物将不再被保护，现在任何人都能将它们捡起!"
+  victim-drops-unlocked-notification: "&e您所击杀玩家的掉落物已过保护时间，您可以在 &c%x%&e, &c%y%&e, &c%z% &e拾取它们"
+  ghost-killed: "&c%attacker% &e已经驱散了 &c%victim% &e的灵魂!"
+  ghost-name: "&6%victim% &e[&c离线&e]"
   damage-indicator:
-    critical: '&c&l致命一击! &e&o(- %damage%)'
-    normal-damage: '&c&o- %damage%'
-  spawnpoint-msg: '&e您已被传送至: %spawnpoint%'
-  spawnpoint-title: '%spawnpoint%'
-  spawnpoint-subtitle: '&f&o欢迎您 %player%!'
-  please-wait-gold-apple: '&c请等待 &4%time%秒 &c才能吃下一个金苹果'
-  please-wait-god-apple: '&c请等待 &4%time%秒 &c才能吃下一个附魔金苹果'
-  enderpearls-block-invalid: '&c为了避免发生错误，您不能将末影珍珠丢进这个方块: &4%block%'
-  enderpearls-not-enough-space: '&c您的末影珍珠所传送的目的地空间不足以容纳您'
-  enderpearls-disabled: '&c末影珍珠在这个服务器上被禁用'
-  chorusfruits-disabled: '&c紫荆果在这个服务器上被禁用'
-  totems-disabled: '&c不死图腾在这个服务器上被禁用'
-  elytras-disabled: '&c鞘翅在这个服务器上被禁用'
-  elytra-has-been-dropped: '&c您的背包满了。鞘翅已被扔到地上。'
-  please-wait-enderpearl: '&c请等待 &4%time%秒 &c以便再次使用末影珍珠'
-  please-wait-chorusfruit: '&c请等待 &4%time%秒 &c以便再次使用紫荆果'
-  please-wait-totem: '&c请等待 &4%time%秒 &c后才能再次触发不死图腾'
-  please-wait-actionbar: '&6&l%material% &r&f- (&e%time%秒&f)'
-  grace-left: '&a%player% 伤害免疫的保护时效还有 &2%time% &a!'
-  no-grace-active: '&c您没有可用的新手保护。'
-  grace-disabled: '&c您关闭了您自身的新手保护。您不再免疫所有类型的伤害!'
-  grace-disabled-by-admin: '&c%player% 关闭了您自身的新手保护。您不再免疫所有类型的伤害!'
-  player-has-grace-active: '&c您不能与该玩家战斗，因为其具有新手保护!'
-  you-have-grace-active: '&c您不能与该玩家战斗，因为您具有新手保护! 等待 &4%time% &c或输入 &4/grace 以关闭新手保护'
-  anti-kill-abuse: '&c您已经击杀 %victim% %amount% 次了! 您不能再次于 &4%time% &c内击杀他!'
-  reached-kill-max: '&c您已达到针对 %victim% 的最大击杀数 (%amount%) !
-您不能在以下时间内再次攻击他: &4%time%'
-  flying-not-allowed-during-combat: '&c在作战状态中不允许飞行!'
-  potion-disabled: '&c这瓶药水在这个服务器上被禁用!'
-  player-not-online: '&c该玩家不在线!'
-  player-not-in-combat: '&a%player% &7并不处于作战状态中!'
-  player-in-combat: '&c%player% &7现在处于作战状态中!'
-  still-in-combat: '&e您仍处于 &c作战状态&e! 请不要离开服务器!'
-  not-in-combat: '&a您现在并不处于战斗当中! 您现在可以离开服务器!'
-  deny-gamemode: '&c您不能在创造模式下攻击其他玩家!'
-  vault-add-money-kill: '&7您因击杀 &c%victim% &7而搜刮到了 &a%amount% %currency%'
-  vault-remove-money-death: '&7您因死亡丢失了 &c%amount% %currency%'
-  vault-remove-money-lost-head: '&7您因在战斗中死亡丢失了 &c%amount% %currency% !'
-  vault-not-enough-money: '&c您没有足够的钱! (&4%amount%&c)'
-  sellhead-successfully-redeemed: '&e您因出售 &6%player% &e的头颅而获得了 &a%amount% %currency%&e。'
-  sellhead-already-redeemed: '&e您 &c已经 &e赎回这个头颅。'
-  sellhead-unknown-head: '&e这个头颅已被赎回或无效。'
-  sellhead-displayname: '&e未被赎回的头颅的所有者: &c%victim%'
-  sellhead-lore: '&f价格: &e%amount% %currency%=&f&o能通过 /sellhead 来售卖'
-  healthbar-bossbar-message: '&c %player% 的血量 &e(&c%health% ❤&e)'
-  cannot-teleport-to-death-location: '&c您的死亡坐标数据已被删除或者您从来没有死亡过!'
-  teleported-to-death-location: '&a您已被传送至最近一次的死亡地点。'
-  pvp-toggle-cmd-has-been-disabled: '&c您不能使用指令切换PVP状态，因为它已被服务器管理员禁用!'
-  pvp-toggle-enabled: '&e您 &a开启 &e了PVP。您现在可以 &a攻击 &e其他玩家!'
-  pvp-toggle-disabled: '&e您 &c关闭 &e了PVP。您不能再 &c攻击 &e其他玩家!'
-  pvp-still-disabled: '&e您的PVP状态处于 &c关闭 &e状态! 通过指令 &c/togglepvp &e启用您的PVP。'
-  player-has-pvp-disabled: '&e您 &c不能 &e攻击这个玩家, 因为他关闭了PVP!'
-  pvp-toggle-cmd-disabled-in-this-world: '&c您不能在该世界使用该指令!'
-  lava-fire-not-allowed: '&e您不能放置 &c%type% &e在这个玩家附近，因为他处于保护状态或PVP关闭状态。'
-  fire: 火焰
-  lava: 岩浆
+    critical: "&c&l致命一击! &e&o(- %damage%)"
+    normal-damage: "&c&o- %damage%"
+  spawnpoint-msg: "&e您已被传送至: %spawnpoint%"
+  spawnpoint-title: "%spawnpoint%"
+  spawnpoint-subtitle: "&f&o欢迎您 %player%!"
+  please-wait-gold-apple: "&c请等待 &4%time%秒 &c才能吃下一个金苹果"
+  please-wait-god-apple: "&c请等待 &4%time%秒 &c才能吃下一个附魔金苹果"
+  enderpearls-block-invalid: "&c为了避免发生错误，您不能将末影珍珠丢进这个方块: &4%block%"
+  enderpearls-not-enough-space: "&c您的末影珍珠所传送的目的地空间不足以容纳您"
+  enderpearls-disabled: "&c末影珍珠在这个服务器上被禁用"
+  chorusfruits-disabled: "&c紫荆果在这个服务器上被禁用"
+  totems-disabled: "&c不死图腾在这个服务器上被禁用"
+  elytras-disabled: "&c鞘翅在这个服务器上被禁用"
+  elytra-has-been-dropped: "&c您的背包满了。鞘翅已被扔到地上。"
+  please-wait-enderpearl: "&c请等待 &4%time%秒 &c以便再次使用末影珍珠"
+  please-wait-chorusfruit: "&c请等待 &4%time%秒 &c以便再次使用紫荆果"
+  please-wait-totem: "&c请等待 &4%time%秒 &c后才能再次触发不死图腾"
+  please-wait-actionbar: "&6&l%material% &r&f- (&e%time%秒&f)"
+  grace-left: "&a%player% 伤害免疫的保护时效还有 &2%time% &a!"
+  no-grace-active: "&c您没有可用的新手保护。"
+  grace-disabled: "&c您关闭了您自身的新手保护。您不再免疫所有类型的伤害!"
+  grace-disabled-by-admin: "&c%player% 关闭了您自身的新手保护。您不再免疫所有类型的伤害!"
+  player-has-grace-active: "&c您不能与该玩家战斗，因为其具有新手保护!"
+  you-have-grace-active: "&c您不能与该玩家战斗，因为您具有新手保护! 等待 &4%time% &c或输入 &4/grace 以关闭新手保护"
+  anti-kill-abuse: "&c您已经击杀 %victim% %amount% 次了! 您不能再次于 &4%time% &c内击杀他!"
+  reached-kill-max: "&c您已达到针对 %victim% 的最大击杀数 (%amount%) !
+您不能在以下时间内再次攻击他: &4%time%"
+  flying-not-allowed-during-combat: "&c在作战状态中不允许飞行!"
+  potion-disabled: "&c这瓶药水在这个服务器上被禁用!"
+  player-not-online: "&c该玩家不在线!"
+  player-not-in-combat: "&a%player% &7并不处于作战状态中!"
+  player-in-combat: "&c%player% &7现在处于作战状态中!"
+  still-in-combat: "&e您仍处于 &c作战状态&e! 请不要离开服务器!"
+  not-in-combat: "&a您现在并不处于战斗当中! 您现在可以离开服务器!"
+  deny-gamemode: "&c您不能在创造模式下攻击其他玩家!"
+  vault-add-money-kill: "&7您因击杀 &c%victim% &7而搜刮到了 &a%amount% %currency%"
+  vault-remove-money-death: "&7您因死亡丢失了 &c%amount% %currency%"
+  vault-remove-money-lost-head: "&7您因在战斗中死亡丢失了 &c%amount% %currency% !"
+  vault-not-enough-money: "&c您没有足够的钱! (&4%amount%&c)"
+  sellhead-successfully-redeemed: "&e您因出售 &6%player% &e的头颅而获得了 &a%amount% %currency%&e。"
+  sellhead-already-redeemed: "&e您 &c已经 &e赎回这个头颅。"
+  sellhead-unknown-head: "&e这个头颅已被赎回或无效。"
+  sellhead-displayname: "&e未被赎回的头颅的所有者: &c%victim%"
+  sellhead-lore: "&f价格: &e%amount% %currency%=&f&o能通过 /sellhead 来售卖"
+  healthbar-bossbar-message: "&c %player% 的血量 &e(&c%health% ❤&e)"
+  cannot-teleport-to-death-location: "&c您的死亡坐标数据已被删除或者您从来没有死亡过!"
+  teleported-to-death-location: "&a您已被传送至最近一次的死亡地点。"
+  pvp-toggle-cmd-has-been-disabled: "&c您不能使用指令切换PVP状态，因为它已被服务器管理员禁用!"
+  pvp-toggle-enabled: "&e您 &a开启 &e了PVP。您现在可以 &a攻击 &e其他玩家!"
+  pvp-toggle-disabled: "&e您 &c关闭 &e了PVP。您不能再 &c攻击 &e其他玩家!"
+  pvp-still-disabled: "&e您的PVP状态处于 &c关闭 &e状态! 通过指令 &c/togglepvp &e启用您的PVP。"
+  player-has-pvp-disabled: "&e您 &c不能 &e攻击这个玩家, 因为他关闭了PVP!"
+  pvp-toggle-cmd-disabled-in-this-world: "&c您不能在该世界使用该指令!"
+  lava-fire-not-allowed: "&e您不能放置 &c%type% &e在这个玩家附近，因为他处于保护状态或PVP关闭状态。"
+  fire: "火焰"
+  lava: "岩浆"
   time:
-    hours: 时
-    hour: 小时
-    minutes: 分
-    minute: 分
-    seconds: 秒
-    second: 秒
-  please-wait-before: '&c请等待 &4%time% &c才能再次那么做!'
+    hours: "时"
+    hour: "小时"
+    minutes: "分"
+    minute: "分"
+    seconds: "秒"
+    second: "秒"
+  please-wait-before: "&c请等待 &4%time% &c才能再次那么做!"
   kill-recap:
-    click-to-view-recap: '&7点击以查看这场战斗的 &e&l简要回顾 &r&7!'
-    inv-name: '&4击杀回顾'
-    close: '&c&l关闭'
-    close-lore: '&7点击以关闭=&7击杀回顾'
-    exit: '&c&l退出'
-    exit-lore: '&7点击以退出=&7简要回顾菜单'
-    back: '&e&l返回'
-    back-lore: '&7点击以返回'
-    list-recap: '&6%killer% &b&lvs. &r&c%victim%'
-    list-recap-lore: '&7查看关于这场战斗的信息=&7日期: %date%'
-    victim: '&c败方: &4%victim%'
-    victim-lore: '&7被 &6%killer% 击杀'
-    killer-weapon: '&c&l武器: &r%item_name%'
-    killer-weapon-lore: '&7所用武器'
-    damage-dealt: '&c造成伤害'
-    damage-dealt-lore: '&7被攻击者所造成的伤害=&7在战斗期间所造成的= =&e伤害
-      造成: &c%damage_dealt%'
-    damage-taken: '&e吸收伤害'
-    damage-taken-lore: '&7被攻击者所受到的伤害=&7在战斗期间吸收到的= =&e伤害
-      吸收: &c%damage_taken%'
-    killer: '&e杀手: &6%killer%'
-    killer-lore: '&7这个玩家击杀了 &c%victim%= =&e吸收伤害: &c%damage_taken%=&e血量
-      left: &d%hearts_left%=&e造成伤害: &c%damage_dealt%'
-    potioneffects: '&d药水效果'
-    potioneffects-lore: '&7被攻击方所受的=&7这些药水效果: %potioneffects%'
-    potioneffect-lore: '&e- &5%potiontype%'
-    assistants: '&b助攻'
-    assistants-lore: '&7这些玩家曾帮助=&7杀手: %assistants%'
-    assistant-lore: '&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%'
-    fists: 拳头
+    click-to-view-recap: "&7点击以查看这场战斗的 &e&l简要回顾 &r&7!"
+    inv-name: "&4击杀回顾"
+    close: "&c&l关闭"
+    close-lore: "&7点击以关闭=&7击杀回顾"
+    exit: "&c&l退出"
+    exit-lore: "&7点击以退出=&7简要回顾菜单"
+    back: "&e&l返回"
+    back-lore: "&7点击以返回"
+    list-recap: "&6%killer% &b&lvs. &r&c%victim%"
+    list-recap-lore: "&7查看关于这场战斗的信息=&7日期: %date%"
+    victim: "&c败方: &4%victim%"
+    victim-lore: "&7被 &6%killer% 击杀"
+    killer-weapon: "&c&l武器: &r%item_name%"
+    killer-weapon-lore: "&7所用武器"
+    damage-dealt: "&c造成伤害"
+    damage-dealt-lore: "&7被攻击者所造成的伤害=&7在战斗期间所造成的= =&e伤害
+      造成: &c%damage_dealt%"
+    damage-taken: "&e吸收伤害"
+    damage-taken-lore: "&7被攻击者所受到的伤害=&7在战斗期间吸收到的= =&e伤害
+      吸收: &c%damage_taken%"
+    killer: "&e杀手: &6%killer%"
+    killer-lore: "&7这个玩家击杀了 &c%victim%= =&e吸收伤害: &c%damage_taken%=&e血量
+      left: &d%hearts_left%=&e造成伤害: &c%damage_dealt%"
+    potioneffects: "&d药水效果"
+    potioneffects-lore: "&7被攻击方所受的=&7这些药水效果: %potioneffects%"
+    potioneffect-lore: "&e- &5%potiontype%"
+    assistants: "&b助攻"
+    assistants-lore: "&7这些玩家曾帮助=&7杀手: %assistants%"
+    assistant-lore: "&e- &b%assistant_name%&e, &a↑ %damage_dealt%&e, &c↓ %damage_taken%"
+    fists: "拳头"
+
+##############################################################################################################
+# 在您的服务器上尽情享受 DeluxeCombat 带来的便利吧，您到达了文件的底部                                                #
+# 喜爱这个资源? 考虑在资源的贴子底下留下您的宝贵评论。                                                               #
+##############################################################################################################
