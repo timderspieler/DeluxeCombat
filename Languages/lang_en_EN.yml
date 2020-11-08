@@ -201,7 +201,7 @@ bounty:
   type-in-targetname: "&ePlease type in the name of the target:"
   type-in-bounty: "&ePlease type in a bounty value: &f(Min: $%min%, Max: $%max%)"
   already-bounty-on-target: "&eThere is already an active bounty set on that target!"
-  bounty-stack-added: "&eYou have added &f%value%$ &eto the active bounty of &f%targeT%&e! &eBounty now: &f%bounty%$"
+  bounty-stack-added: "&eYou have added &f%value%$ &eto the active bounty of &f%target%&e! &eBounty now: &f%bounty%$"
   cant-set-bounty-on-yourself: "&eYou cant set a bounty on &cyourself&e!"
   target-not-able-to-fight: "&c%target% &eis not able to fight at the moment!"
   setup-cancelled: "&eBounty setup cancelled."
