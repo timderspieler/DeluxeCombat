@@ -133,6 +133,7 @@ bounty:
   type-in-targetname: "&e请输入所悬赏目标的游戏名称:"
   type-in-bounty: "&e请输入一个赏金金额: &f(最少: $%min%, 最多: $%max%)"
   already-bounty-on-target: "&e该目标身上已经有一个活跃的悬赏令!"
+  bounty-stack-added: "&e您追加了 &f%value%$ &e的赏金至目标 &f%target% &e身上! &e他身上目前共有赏金: &f%bounty%$"
   cant-set-bounty-on-yourself: "&e您不能悬赏 &c您自己&e!"
   target-not-able-to-fight: "&c%target% &e目前不能被攻击!"
   setup-cancelled: "&e已取消设定悬赏的操作。"
