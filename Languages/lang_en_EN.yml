@@ -177,7 +177,6 @@ bounty:
   - " &6&lBounties"
   - " "
   - " &fCurrently active:"
-  - "%bounties%"
   
   bounty-list-message-entry: " &e%target%&f, Bounty: &f$%bounty%&f, Initiator: &e%initiator%"
   
