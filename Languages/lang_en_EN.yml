@@ -52,10 +52,10 @@ combat-logger:
  display-time-bossbar: "&e&o%time%s &r&c&lCombat Mode &r&e&o%time%s"
  display-time-actionbar: "%progressbar% &r&e- &c%time%s"
  player-is-already-fighting: "&c%victim% &eis already fighting with another player! You cant hit him right now."
- combat-enter-title: "&eYou are now in combat!"
- combat-enter-subtitle: "&cDo not leave the server!"
- combat-leave-title: "&e&l✓"
- combat-leave-subtitle: "&aYou can now leave the server"
+ combat-enter-title: "none"
+ combat-enter-subtitle: "none"
+ combat-leave-title: "none"
+ combat-leave-subtitle: "none"
  
 # DEATH-SIGN
 death-sign:
