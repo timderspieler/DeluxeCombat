@@ -13,10 +13,11 @@
 # This is one of the configuration files of the DeluxeCombat plugin.                                         #
 # Here, you can configure the messages. If you want to change all settings, switch to the config.yml         #
 #                                                                                                            #
-# The plugin supports following server versions: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x, 1.15  #
+# The plugin supports following server versions: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x, 1.15, #
+#												 1.16.x														 #
 #                                                                                                            #
 # Any problems? Write me a private message on spigot! Spigot: www.spigotmc.org/members/199727/               #
-# To get quick support please also consider joining my discord server: discordapp.com/invite/MGTSYjS         #
+# To get quick support please also consider joining my discord server: discord.com/invite/zSkcTz3            #
 #                                                                                                            #
 # ~ timderspieler                                                                                            #
 #                                                                                                            #
@@ -46,10 +47,15 @@ combat-logger:
  chorusfruit-disabled-during-combat: "&cYou cant use chorus fruits during combat!"
  totem-disabled-during-combat: "&cYou cant use totems of undying during combat!"
  elytra-disabled-during-combat: "&cYou cant use an elytra during a fight!"
+ building-disabled-during-combat: "&cYou cannot build during combat!"
  deny-pvp-deny-enter: "&cYou cant enter this region during a fight!"
  display-time-bossbar: "&e&o%time%s &r&c&lCombat Mode &r&e&o%time%s"
  display-time-actionbar: "%progressbar% &r&e- &c%time%s"
  player-is-already-fighting: "&c%victim% &eis already fighting with another player! You cant hit him right now."
+ combat-enter-title: "&eYou are now in combat!"
+ combat-enter-subtitle: "&cDo not leave the server!"
+ combat-leave-title: "&e&l✓"
+ combat-leave-subtitle: "&aYou can now leave the server"
  
 # DEATH-SIGN
 death-sign:
@@ -166,6 +172,15 @@ bounty:
   - " &e%initiator% &fhas set a bounty on &c%target%&f!"
   - " &fThe first player that kills &c%target% &fgets &e%bounty%$&f!"
   - " "
+  bounty-list-message-list:
+  - " "
+  - " &6&lBounties"
+  - " "
+  - " &fCurrently active:"
+  - "%bounties%"
+  
+  bounty-list-message-entry: " &e%target%&f, Bounty: &f$%bounty%&f, Initiator: &e%initiator%"
+  
   bounty-claimed-broadcast: "&e%player% &fhas claimed &e%target%'s &fbounty! (&e$%bounty%&f)"
   bounty-claimed: "&eYou have claimed &c%target%'s &ebounty! You gained &a$%bounty%&e!"
   
@@ -204,7 +219,9 @@ bounty:
   bounty-stack-added: "&eYou have added &f%value%$ &eto the active bounty of &f%target%&e! &eBounty now: &f%bounty%$"
   cant-set-bounty-on-yourself: "&eYou cant set a bounty on &cyourself&e!"
   target-not-able-to-fight: "&c%target% &eis not able to fight at the moment!"
+  target-immune-against-bounty: "&c%target% &eis immune against bounties! Bounty setup cancelled."
   setup-cancelled: "&eBounty setup cancelled."
+  no-bounties-active: "&cThere are no active bounties at the moment."
 
 ##############################################################################################################
 # General                                                                                                    #
