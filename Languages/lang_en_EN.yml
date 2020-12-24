@@ -52,6 +52,7 @@ combat-logger:
  display-time-bossbar: "&e&o%time%s &r&c&lCombat Mode &r&e&o%time%s"
  display-time-actionbar: "%progressbar% &r&e- &c%time%s"
  player-is-already-fighting: "&c%victim% &eis already fighting with another player! You cant hit him right now."
+ you-cant-do-that-during-combat: "&eYou cannot do that during combat."
  combat-enter-title: "none"
  combat-enter-subtitle: "none"
  combat-leave-title: "none"
@@ -261,11 +262,48 @@ general:
   # Message when you land a headshot on a player
   headshot-actionbar: "&a&oHeadshot for %player%!"
   
+  # No Item in Hand
+  no-item-in-hand: "&eYou have no item in your hand!"
+  
   # Killer Drops
   killer-drops-unlocked-in: "&eDrops unlock in: &c%time%s"
   killer-drops-are-locked-next: "&eYour loot is protected for the next &a%time%s&e!"
   killer-drops-are-unlocked: "&eYour loot is no longer protected and can now be picked up by everyone!"
   victim-drops-unlocked-notification: "&eYour drops are now unlocked. You can pick them up again at &c%x%&e, &c%y%&e, &c%z%"
+  
+  # StatTrak
+  stattrak:
+  
+    help-list:
+    - " "
+    - " &6&lStatTrak"
+    - " "
+    - " &f/stattrak inspect &e- Inspect a StatTrak item"
+    - " &f/stattrak register &e- Register a StatTrak for %cost%$"
+    - " &f/stattrak changeOwner (Owner) &e- Change the owner"
+    - " &f/stattrak reset &e- Reset the StatTrak on your item"
+    - " "
+  
+    inspect-message-list:
+    - " "
+    - " &6&lStatTrak"
+    - " "
+    - " &e- Item: &f%item%"
+    - " &e- Kills: &f%kills%"
+    - " &e- Owner: &f%owner%"
+    - " "
+  
+    title: "&6&lStatTrak"
+    subtitle: "&eKills: &f%kills%&e"
+  
+    item-has-no-stattrak: "&eThis item has no StatTrak attached to it!"
+    item-stattrak-registered: "&eYou have successfully purchased a StatTrak for your item (Cost: &f%cost%$&e)!"
+    item-stattrak-already-registered: "&eThis item already has a StatTrak attached to it!"
+    item-not-allowed: "&eYou cannot attach a StatTrak to this item!"
+    
+    change-owner: "&eYou successfully changed the owner to: &f%owner%&e!"
+    you-are-not-the-owner: "&eYou cant do that because you are not the owner of this StatTrak!"
+    reseted: "&eYou have successfully reset the StatTrak!"
   
   # Ghostplayer messages
   ghost-killed: "&c%attacker% &ehas killed the ghost of &c%victim%&e!"
