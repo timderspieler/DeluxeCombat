@@ -16,7 +16,7 @@
 # 该插件目前支持以下版本的服务器: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x, 1.15  #
 #                                                                                                            #
 # 遇到了一些问题？在 spigot 上给我私信! Spigot: www.spigotmc.org/members/199727/               #
-# 如果您想获得更快速的支持， 请考虑加入我的 discord 服务器: discordapp.com/invite/MGTSYjS         #
+# 如果您想获得更快速的支持， 请考虑加入我的 discord 服务器: discord.com/invite/zSkcTz3         #
 #                                                                                                            #
 # ~ timderspieler                                                                                            #
 #                                                                                                            #
@@ -46,11 +46,16 @@ combat-logger:
   chorusfruit-disabled-during-combat: "&c您不能在作战过程中食用紫荆果!"
   totem-disabled-during-combat: "&c您不能在作战中使用不死图腾!"
   elytra-disabled-during-combat: "&c您不能在作战过程中使用鞘翅!"
+  building-disabled-during-combat: "&c您不能在作战过程中放置方块!"
   deny-pvp-deny-enter: "&c您无法在 PVP 关闭状态下进入该区域!"
   display-time-bossbar: "&e&o%time%秒 &r&c&l作战模式 &r&e&o%time%秒"
   display-time-actionbar: "%progressbar% &r&e- &c%time%秒"
-  player-is-already-fighting: "&c%victim% &e正在与另一个玩家进行战斗!
-    您目前无法袭击他。"
+  player-is-already-fighting: "&c%victim% &e正在与另一个玩家进行战斗! 您目前无法袭击他。"
+  you-cant-do-that-during-combat: "&e您不能在战斗中那么做！"
+  combat-enter-title: "none" #&e您目前正在战斗!
+  combat-enter-subtitle: "none" #&c请不要离开服务器!
+  combat-leave-title: "none" #&e&l✓
+  combat-leave-subtitle: "none" #&a您现在可以离开服务器了
 
 # 死亡告示牌
 death-sign:
@@ -76,8 +81,7 @@ death-causes:
   magic_player: "&c%player% &e被 &c%killer% 的神秘药水致死了 &e(&c%hearts%&e)"
   fire: "&c%player% &e尝试与火共舞，可惜火并不那么想"
   none: "&c%player% &e出于未知的原因死了"
-  sword_kill: "&c%player% &e受到了来自 &c%killer% 的剑伤 &e(&c%hearts%&e)
-  武器名称: &c&o%item_name%"
+  sword_kill: "&c%player% &e受到了来自 &c%killer% 的伤害 &e(&c%hearts%&e) 武器名称: &c&o%item_name%"
 
 ##############################################################################################################
 # 尸体信息                                                                                                    #
@@ -96,8 +100,7 @@ corpses-messages:
 # 如果您启用了该功能, 你可以在这里编辑关于积分排名系统的所有信息                              #
 ##############################################################################################################
 Points-Ranking-System:
-  unknown-input-stats: "&c无法识别您的输入，请确认您使用的是以下内容: KILLS,
-    DEATHS, POINTS, COMBATLOGS"
+  unknown-input-stats: "&c无法识别您的输入，请确认您使用的是以下内容: KILLS, DEATHS, POINTS, COMBATLOGS"
   not-loaded-atm: "&c这些统计数据并没有被加载，请在稍后重试!"
   disabled: "&c排名系统已被关闭!"
   reset: "&c您的统计数据已被清空!"
@@ -168,6 +171,14 @@ bounty:
   - " &e%initiator% &f正在悬赏 &c%target%&f!"
   - " &f首个击杀 &c%target% &f的玩家会获得 &e%bounty%$&f!"
   - " "
+  bounty-list-message-list:
+  - " "
+  - " &6&l悬赏令"
+  - " "
+  - " &f当前被悬赏的玩家:"
+
+  bounty-list-message-entry: " &e%target%&f, 赏金: &f$%bounty%&f, 悬赏人: &e%initiator%"
+  
   bounty-claimed-broadcast: "&e%player% &f领取到了 &e%target% &f的悬赏金额! (&e$%bounty%&f)"
   bounty-claimed: "&e您成功获得了悬赏目标 &c%target% &e的赏金! 您挣到了 &a$%bounty%&e!"
   no-bounty-on-target: "&e目前玩家 &c%target% &e身上没有悬赏!"
@@ -199,7 +210,9 @@ bounty:
   bounty-stack-added: "&e您追加了 &f%value%$ &e的赏金至目标 &f%target% &e身上! &e他身上目前共有赏金: &f%bounty%$"
   cant-set-bounty-on-yourself: "&e您不能悬赏 &c您自己&e!"
   target-not-able-to-fight: "&c%target% &e目前不能被攻击!"
+  target-immune-against-bounty: "&c%target% &e拥有免于悬赏的权限! 悬赏设定已取消。"
   setup-cancelled: "&e已取消设定悬赏的操作。"
+  no-bounties-active: "&c目标目前身上并未背负悬赏令。"
 
 ##############################################################################################################
 # 通用                                                                                                    #
@@ -237,6 +250,9 @@ general:
 
   # 当你击中一名玩家头部时的信息
   headshot-actionbar: "&a&o您击中了 %player% 的头部!"
+  
+  # 手中无物
+  no-item-in-hand: "&e您手上目前没有任何物品!"
 
   # 掉落物保护信息
   killer-drops-unlocked-in: "&e掉落物被保护倒计时: &c%time%秒"
@@ -244,6 +260,40 @@ general:
   killer-drops-are-unlocked: "&e您的掉落物将不再被保护，现在任何人都能将它们捡起!"
   victim-drops-unlocked-notification: "&e您所击杀玩家的掉落物已过保护时间，您可以在 &c%x%&e, &c%y%&e, &c%z% &e拾取它们"
 
+  # 数据追踪计数器
+  stattrak:
+
+    help-list:
+    - " "
+    - " &6&l数据追踪计数器"
+    - " "
+    - " &f/stattrak inspect &e- 检查追踪物品的统计数据"
+    - " &f/stattrak register &e- 以 %cost%$ 价格来为手上物品上数据追踪计数器"
+    - " &f/stattrak changeOwner (Owner) &e- 更改指定所有者"
+    - " &f/stattrak reset &e- 重置您物品中的数据追踪计数器"
+    - " "
+
+    inspect-message-list:
+    - " "
+    - " &6&l数据追踪计数器"
+    - " "
+    - " &e- 物品: &f%item%"
+    - " &e- 击杀数: &f%kills%"
+    - " &e- 所有者: &f%owner%"
+    - " "
+
+    title: "&6&l数据追踪计数器"
+    subtitle: "&e击杀数: &f%kills%&e"
+
+    item-has-no-stattrak: "&e这个物品上并没有数据追踪计数器!"
+    item-stattrak-registered: "&e您成功为您的物品购买了数据追踪计数器 (花费: &f%cost%$&e)!"
+    item-stattrak-already-registered: "&e这个物品已经有数据追踪计数器了!"
+    item-not-allowed: "&e您不能将数据追踪计数器捆绑至这个物品!"
+
+    change-owner: "&e您成功更改所有者: &f%owner%&e!"
+    you-are-not-the-owner: "&e您不能那么做，因为您不是这个数据追踪计数器的所有者之一!"
+    reseted: "&e您成功重置了数据追踪计数器!"
+    
   # 玩家灵魂信息
   ghost-killed: "&c%attacker% &e已经驱散了 &c%victim% &e的灵魂!"
   ghost-name: "&6%victim% &e[&c离线&e]"
