@@ -36,8 +36,10 @@
 ##############################################################################################################
 combat-logger:
  potion-disabled-during-combat: "&cThis potion is disabled during combat!"
+ damage-to-from-entity: "&eYou are now in &ccombat &ewith &c%entity% &eso do not quit!"
  damage-to-enemy: '&eYou are now in &ccombat &ewith &6%victim% &eso do not quit.'
  damage-from-enemy: '&6%damager% &eis now in &ccombat &ewith you so do not quit.'
+ leave-broadcast-entity: "&c%player% &eleft while he was in combat with &c%entity_name% &e(&c%entity%&e)!"
  disabled-command: '&eYou cant use the command &c%command% &ewhile you are in combat.'
  leave-broadcast: '&c%player% left while he was combat with %damager%'
  items-broadcast: "&4%player%'s &citems are at: &4%world%&c, &4%x%, %y%, %z%"
