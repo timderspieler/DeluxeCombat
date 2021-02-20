@@ -39,9 +39,9 @@ combat-logger:
  damage-to-from-entity: "&eYou are now in &ccombat &ewith &c%entity% &eso do not quit!"
  damage-to-enemy: '&eYou are now in &ccombat &ewith &6%victim% &eso do not quit.'
  damage-from-enemy: '&6%damager% &eis now in &ccombat &ewith you so do not quit.'
- leave-broadcast-entity: "&c%player% &eleft while he was in combat with &c%entity_name% &e(&c%entity%&e)!"
  disabled-command: '&eYou cant use the command &c%command% &ewhile you are in combat.'
  leave-broadcast: '&c%player% left while he was combat with %damager%'
+ leave-broadcast-entity: "&c%player% &eleft while he was in combat with &c%entity_name% &e(&c%entity%&e)!"
  items-broadcast: "&4%player%'s &citems are at: &4%world%&c, &4%x%, %y%, %z%"
  combat-expired-player: "&eYou are no longer fighting against &c%victim%&e."
  combat-expired: '&eYou are &anot &ein combat anymore and allowed to quit.'
@@ -237,6 +237,8 @@ general:
   help-message: "&7Type in &c/%cmd% help &7for help!"
   number-between: "&ePlease choose a number between &c%min% &eand %max%&e!"
   not-a-number: "&c%input% &eis not a number!"
+  enabled: "&aenabled"
+  disabled: "&cdisabled"
   
   # Help list for your players
   help-list:
@@ -272,6 +274,16 @@ general:
   killer-drops-are-locked-next: "&eYour loot is protected for the next &a%time%s&e!"
   killer-drops-are-unlocked: "&eYour loot is no longer protected and can now be picked up by everyone!"
   victim-drops-unlocked-notification: "&eYour drops are now unlocked. You can pick them up again at &c%x%&e, &c%y%&e, &c%z%"
+  
+  # PvP Interval
+  interval-ended-msg: "&eA PvP period has ended. PvP is now %status% &efrom &c%from% &eto &c%to%&e!"
+  interval-started-msg: "&eA PvP period has started! PvP is now %status% &efrom &a%from% &euntil &a%to%&e!"
+  pvp-enabled-title: "&aPvP is now enabled!"
+  pvp-enabled-subtitle: "&7You can now fight others!"
+  pvp-disabled-title: "&cPvP is now disabled!"
+  pvp-disabled-subtitle: "&7You cant fight now!"
+  interval-toggle-not-allowed: "&eYou cant toggle your pvp in this world."
+  pvp-enabled-wrldgrd-info: "&ePvP is now enabled in this world, but it seems like the region you are currently in is a &cnon-pvp &eregion!"
   
   # StatTrak
   stattrak:
