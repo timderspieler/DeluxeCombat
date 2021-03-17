@@ -59,6 +59,13 @@ combat-logger:
  combat-enter-subtitle: "none"
  combat-leave-title: "none"
  combat-leave-subtitle: "none"
+ tagged-list-no-players-tagged: " &fNo players are tagged at the moment."
+ tagged-list:
+ - " "
+ - " &6&lTagged players"
+ - " "
+ - " %tagged_players%"
+ - " "
  
 # DEATH-SIGN
 death-sign:
@@ -318,6 +325,7 @@ general:
     change-owner: "&eYou successfully changed the owner to: &f%owner%&e!"
     you-are-not-the-owner: "&eYou cant do that because you are not the owner of this StatTrak!"
     reseted: "&eYou have successfully reset the StatTrak!"
+    actionbar-message: "&eStatTrak: &f%kills% Kills&e, Owner: &f%owner%"
   
   # Ghostplayer messages
   ghost-killed: "&c%attacker% &ehas killed the ghost of &c%victim%&e!"
@@ -398,6 +406,13 @@ general:
   pvp-still-disabled: "&eYou pvp is &cdisabled&e! Enabled it again with &c/togglepvp"
   player-has-pvp-disabled: "&eYou &ccannot &efight this player, because he has pvp disabled!"
   pvp-toggle-cmd-disabled-in-this-world: "&cYou cant use this command in this world!"
+  pvp-toggle-no-players-found: "&fNo players have their pvp %filter%&r&f!"
+  pvp-toggle-list:
+  - " "
+  - " &6&lPvP Status &r&f(Filter: %filter%&r&f)"
+  - " "
+  - " %players_status%"
+  - " "
   
   # Prevent lava / fire place in the range of a player that has a protection or pvp disabled
   lava-fire-not-allowed: "&eYou cannot place &c%type% &enear this player because he has a protection or pvp disabled."
