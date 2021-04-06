@@ -243,7 +243,7 @@ general:
   no-permission: "&cYou dont have permission!"
   help-message: "&7Type in &c/%cmd% help &7for help!"
   number-between: "&ePlease choose a number between &c%min% &eand %max%&e!"
-  not-a-number: "&c%input% &eis not a number!
+  not-a-number: "&c%input% &eis not a number!"
   you-cant-do-that-world: "&eYou cant do that in this world!"
   you-cant-do-that-region: "&eYou cant do that in this region!"
   enabled: "&aenabled"
