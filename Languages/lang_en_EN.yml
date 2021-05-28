@@ -249,6 +249,11 @@ general:
   enabled: "&aenabled"
   disabled: "&cdisabled"
   
+  # Blacklisted Enchantment
+  blacklisted-enchantment-title: "&c&l!Warning!"
+  blacklisted-enchantment-subtitle: "&eYour item contains blacklisted enchantments!"
+  blacklisted-enchantment-msg: "&eThe item in your hand has &cblacklisted enchantments &eon it. You cant use it right now!"
+  
   # Help list for your players
   help-list:
   - "&4&m#&c&m---------------------------------&4&m#"
