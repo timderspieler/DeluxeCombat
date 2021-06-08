@@ -187,8 +187,28 @@ bounty:
   - " &6&lBounties"
   - " "
   - " &fCurrently active:"
+  bounty-help-message-list:
+  - " "
+  - " &6&lBounty"
+  - " &f/%cmd% create &e- Create a bounty"
+  - " &f/%cmd% list &e- List all bounties"
+  - " &f/%cmd% expire (Player) &e- Expire the bounty of a player"
+  - " &f/%cmd% compass &e- Point your compass to a bounty"
+  - " "
   
   bounty-list-message-entry: " &e%target%&f, Bounty: &f$%bounty%&f, Initiator: &e%initiator%"
+  
+  bounty-list-menu-title: "Bounty List"
+  bounty-entry-item-title: "&6&o%target%"
+  bounty-entry-item-lore: "&fBounty: &e$%bounty%=&fInitiator: &e%initiator%=&fTime left: &e%time%"
+  
+  bounty-compass-linked: "&eYour compass now points to &c%target%&e. Right-Click to update / to see, how far the bounty is away from you."
+  bounty-no-compass-in-hand: "&eYou have no compass in your hand."
+  bounty-too-many-compass: "&ePlease only put one compass in your hand."
+  bounty-compass-cooldown: "&ePlease wait &c%time% &ebefore you update your compass again."
+  bounty-compass-title: "&6&lBounty Tracker"
+  bounty-compass-lore: "&fTarget: &e%target%==&7&oRight-Click to update"
+  bounty-compass-update: "&eCompass updated. &c%target% &eis &c%blocks% &eblocks away from you!"
   
   bounty-claimed-broadcast: "&e%player% &fhas claimed &e%target%'s &fbounty! (&e$%bounty%&f)"
   bounty-claimed: "&eYou have claimed &c%target%'s &ebounty! You gained &a$%bounty%&e!"
@@ -204,6 +224,8 @@ bounty:
   
   bounty-expired-broadcast: "&fThe bounty on &e%target% &fis expired."
   bounty-expired-initiator: "&fYour bounty on &e%target% &fis expired. You got &e$%bounty% &fback."
+  
+  bounty-successfully-removed: "&eYou successfully have removed the bounty on &a%target%&e!"
   
   accept-item: "&aAccept"
   accept-item-lore: "&7Click to create the bounty"
@@ -249,11 +271,6 @@ general:
   enabled: "&aenabled"
   disabled: "&cdisabled"
   
-  # Blacklisted Enchantment
-  blacklisted-enchantment-title: "&c&l!Warning!"
-  blacklisted-enchantment-subtitle: "&eYour item contains blacklisted enchantments!"
-  blacklisted-enchantment-msg: "&eThe item in your hand has &cblacklisted enchantments &eon it. You cant use it right now!"
-  
   # Help list for your players
   help-list:
   - "&4&m#&c&m---------------------------------&4&m#"
@@ -298,6 +315,11 @@ general:
   pvp-disabled-subtitle: "&7You cant fight now!"
   interval-toggle-not-allowed: "&eYou cant toggle your pvp in this world."
   pvp-enabled-wrldgrd-info: "&ePvP is now enabled in this world, but it seems like the region you are currently in is a &cnon-pvp &eregion!"
+  
+  # Blacklisted Enchantment
+  blacklisted-enchantment-title: "&c&l!Warning!"
+  blacklisted-enchantment-subtitle: "&eYour item contains blacklisted enchantments!"
+  blacklisted-enchantment-msg: "&eThe item in your hand has &cblacklisted enchantments &eon it. You cant use it right now!"
   
   # StatTrak
   stattrak:
@@ -420,6 +442,21 @@ general:
   - " "
   - " %players_status%"
   - " "
+  pvp-toggle-confirmation-needed: "&eUse &c/togglepvp confirm &eto confirm that you want to toggle your pvp. Use &c/togglepvp deny &eto cancel. You have &c%time% &eto decide."
+  pvp-toggle-confirmation-information:
+  - " "
+  - " &6&lPvP Toggle Confirmation"
+  - " &fYou are about to turn on your PvP!"
+  - " "
+  - " &f- Other players can kill you"
+  - " &f- You can lose all your items"
+  - " &f- The server does not refund your items"
+  - " "
+  pvp-toggle-confirmation-title: "&c&lWarning!"
+  pvp-toggle-confirmation-subtitle: "&fPlease confirm that you want to toggle your PvP!"
+  pvp-toggle-confirmation-expired: "&eThe pvp toggle confirmation has expired."
+  pvp-toggle-confirmation-nothing-to-confirm: "&eYou have nothing to confirm."
+  pvp-toggle-confirmation-denied: "&eYou have &cdenied &ethe pvp toggle confirmation. Your pvp is still &cdisabled&e."
   
   # Prevent lava / fire place in the range of a player that has a protection or pvp disabled
   lava-fire-not-allowed: "&eYou cannot place &c%type% &enear this player because he has a protection or pvp disabled."
@@ -428,6 +465,8 @@ general:
   
   # Time formatting
   time:
+    days: "days"
+    day: "day"
     hours: "hours"
     hour: "hour"
     minutes: "minutes"
