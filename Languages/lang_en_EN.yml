@@ -92,6 +92,7 @@ death-causes:
   fire: "&c%player% &eplayed with fire"
   none: "&c%player% &edied"
   sword_kill: "&c%player% &egot stabbed by &c%killer% &e(&c%hearts%&e) using following item: &c&o%item_name%"
+  explosion_player: "&c%player% &egot blown up by &c%killer%&e!"
 
 ##############################################################################################################
 # Corpses                                                                                                    #
