@@ -205,6 +205,7 @@ bounty:
   
   bounty-compass-linked: "&eYour compass now points to &c%target%&e. Right-Click to update / to see, how far the bounty is away from you."
   bounty-no-compass-in-hand: "&eYou have no compass in your hand."
+  bounty-is-customized: "&ePlease put an un-customized compass in your hand."
   bounty-too-many-compass: "&ePlease only put one compass in your hand."
   bounty-compass-cooldown: "&ePlease wait &c%time% &ebefore you update your compass again."
   bounty-compass-title: "&6&lBounty Tracker"
@@ -225,6 +226,7 @@ bounty:
   
   bounty-expired-broadcast: "&fThe bounty on &e%target% &fis expired."
   bounty-expired-initiator: "&fYour bounty on &e%target% &fis expired. You got &e$%bounty% &fback."
+  bounty-expired-by-player: "&eYou paid &c$%amount% &eto expire your bounty."
   
   bounty-successfully-removed: "&eYou successfully have removed the bounty on &a%target%&e!"
   
@@ -254,6 +256,7 @@ bounty:
   target-immune-against-bounty: "&c%target% &eis immune against bounties! Bounty setup cancelled."
   setup-cancelled: "&eBounty setup cancelled."
   no-bounties-active: "&cThere are no active bounties at the moment."
+  no-bounty-on-you: "&cThere is no bounty on you!"
 
 ##############################################################################################################
 # General                                                                                                    #
