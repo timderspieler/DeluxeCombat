@@ -226,7 +226,7 @@ bounty:
   
   bounty-expired-broadcast: "&fThe bounty on &e%target% &fis expired."
   bounty-expired-initiator: "&fYour bounty on &e%target% &fis expired. You got &e$%bounty% &fback."
-  bounty-expired-by-player: "&eYou paid &c$%amount% &eto expire your bounty."
+  bounty-expired-by-initiator: "&eYou paid &c$%amount% &eto expire your bounty."
   
   bounty-successfully-removed: "&eYou successfully have removed the bounty on &a%target%&e!"
   
